@@ -37,7 +37,7 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
     <header className="w-full bg-white/70 backdrop-blur-sm sticky top-0 z-40 shadow-sm border-b border-slate-100">
       <nav className="max-w-[1200px] mx-auto flex items-center justify-between gap-6 px-6 py-4">
         <Link to="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[#18386e] text-white rounded-md flex items-center justify-center shadow">
+          <div className="w-10 h-10 bg-[#7B1E2C] text-white rounded-md flex items-center justify-center shadow">
             <img className="w-5 h-5" alt="Gem" src="/gem.svg" />
           </div>
           <div>
@@ -124,7 +124,7 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
             </button>
 
             {/* Small gem/diamond icon to match the navbar */}
-            <div className="absolute left-3 top-3 w-10 h-10 bg-[#18386e] text-white rounded-md flex items-center justify-center shadow">
+            <div className="absolute left-3 top-3 w-10 h-10 bg-[#7B1E2C] text-white rounded-md flex items-center justify-center shadow">
               <img className="w-5 h-5" alt="Gem" src="/gem.svg" />
             </div>
 
