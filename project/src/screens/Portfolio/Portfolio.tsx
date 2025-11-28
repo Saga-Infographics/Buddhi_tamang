@@ -130,7 +130,7 @@ export const Portfolio = (): JSX.Element => {
 
       <section className="relative w-full py-24 bg-white">
   <div className="container mx-auto px-6 md:px-40">
-          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#18386e] text-5xl tracking-[0] leading-[60px] mb-6 text-center">
+          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-5xl tracking-[0] leading-[60px] mb-6 text-center">
             Portfolio
           </h1>
           <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7 mb-12 text-center max-w-3xl mx-auto">
@@ -145,7 +145,7 @@ export const Portfolio = (): JSX.Element => {
                 variant={activeCategory === category ? "default" : "outline"}
                 className={
                   activeCategory === category
-                    ? "bg-[#18386e] hover:bg-[#18386e]/90 text-white px-8"
+                    ? "bg-[#7B1E2C] hover:bg-[#7B1E2C]/90 text-white px-8"
                     : "border-[#dee1e6] text-[#171a1f] hover:bg-slate-50 px-8"
                 }
               >
@@ -173,14 +173,14 @@ export const Portfolio = (): JSX.Element => {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="[font-family:'Open_Sans',Helvetica] font-semibold text-[#18386e] text-sm tracking-[0] leading-5">
+                    <span className="[font-family:'Open_Sans',Helvetica] font-semibold text-[#7B1E2C] text-sm tracking-[0] leading-5">
                       {item.category}
                     </span>
                     <span className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-sm tracking-[0] leading-5">
                       {item.year}
                     </span>
                   </div>
-                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-xl tracking-[0] leading-7 mb-2">
+                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-xl tracking-[0] leading-7 mb-2">
                     {item.title}
                   </h3>
                   <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1f] text-base tracking-[0] leading-6 mb-2">

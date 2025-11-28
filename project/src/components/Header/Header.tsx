@@ -41,7 +41,7 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
             <img className="w-5 h-5" alt="Gem" src="/gem.svg" />
           </div>
           <div>
-            <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#18386e] text-lg tracking-[0] leading-5">
+            <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-lg tracking-[0] leading-5">
               Buddhi Tamang
             </h1>
             <p className="text-xs text-gray-500">Actor • Theatre Practitioner</p>
@@ -55,10 +55,10 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
                 <Link
                   to={item.path}
                   className={`[font-family:'Open_Sans',Helvetica] text-sm tracking-[0] leading-[22px] whitespace-nowrap px-3 py-2 rounded-lg transition-all ${
-                    item.label === activePage
-                      ? "font-semibold text-[#18386e] bg-[#18386e]/10 shadow-inner"
-                      : "font-normal text-[#171a1f] hover:text-[#18386e] hover:bg-[#f3f6fb]"
-                  }`}
+                      item.label === activePage
+                        ? "font-semibold text-[#7B1E2C] bg-[#7B1E2C]/10 shadow-inner"
+                          : "font-normal text-[#171a1f] hover:text-[#7B1E2C] hover:bg-[#f3f6fb]"
+                    }`}
                 >
                   {item.label}
                 </Link>
@@ -136,7 +136,7 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
                       <Link
                         to={item.path}
                         onClick={() => setOpenMobile(false)}
-                        className="block py-3 text-lg [font-family:'Open_Sans',Helvetica] font-medium text-[#171a1f] hover:text-[#18386e]"
+                        className="block py-3 text-lg [font-family:'Open_Sans',Helvetica] font-medium text-[#171a1f] hover:text-[#7B1E2C]"
                       >
                         {item.label}
                       </Link>

@@ -42,7 +42,7 @@ export const Contact = (): JSX.Element => {
 
             {/* Right: Contact details */}
             <aside>
-              <h1 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-3xl tracking-[0] leading-9 mb-6">
+              <h1 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-3xl tracking-[0] leading-9 mb-6">
                 Reach Out
               </h1>
 
@@ -64,7 +64,7 @@ export const Contact = (): JSX.Element => {
                 </div>
               </div>
 
-              <h2 className="[font-family:'Playfair_Display',Helvetica] font-medium text-[#171a1f] text-xl tracking-[0] leading-7 mb-4">
+              <h2 className="[font-family:'Playfair_Display',Helvetica] font-medium text-[#7B1E2C] text-xl tracking-[0] leading-7 mb-4">
                 Connect on Social Media
               </h2>
 
@@ -99,7 +99,7 @@ export const Contact = (): JSX.Element => {
                 ))}
               </div>
 
-              <h2 className="[font-family:'Playfair_Display',Helvetica] font-medium text-[#171a1f] text-xl tracking-[0] leading-7 mb-4">
+              <h2 className="[font-family:'Playfair_Display',Helvetica] font-medium text-[#7B1E2C] text-xl tracking-[0] leading-7 mb-4">
                 Our Location
               </h2>
 
