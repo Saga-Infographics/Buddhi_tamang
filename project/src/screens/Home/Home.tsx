@@ -64,64 +64,74 @@ export const Home = (): JSX.Element => {
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
                 {/* Card 1 - Experience */}
-                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-none w-14 h-14 rounded-lg bg-gradient-to-br from-[#7B1E2C] to-[#5a1620] text-white flex items-center justify-center shadow"> 
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                        <path d="M12 2v20M5 7h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                        <circle cx="8" cy="17" r="1.6" fill="currentColor" />
-                        <circle cx="16" cy="17" r="1.6" fill="currentColor" />
-                      </svg>
-                    </div>
-
-                    <div className="flex-1 min-w-0">
-                      <div className="text-sm text-muted-foreground">Years</div>
-                      <div className="text-2xl font-bold text-[#171a1f]">15+</div>
-                      <div className="text-sm text-slate-500 mt-2 break-words">Experience across theatre, film, and television</div>
-                    </div>
+                {/* Card 1 - Experience */}
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[300px] flex flex-col">
+                  {/* Icon */}
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#7B1E2C] to-[#5a1620] text-white flex items-center justify-center shadow-inner mb-4">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden>
+                      <path d="M12 2v20M5 7h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      <circle cx="8" cy="17" r="1.6" fill="currentColor" />
+                      <circle cx="16" cy="17" r="1.6" fill="currentColor" />
+                    </svg>
                   </div>
+
+                  {/* Title */}
+                  <p className="text-sm text-gray-500">Years</p>
+                  <p className="text-3xl font-bold text-[#171a1f]">15+</p>
+
+                  {/* Description */}
+                  <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+                    Experience across theatre, film, and television.
+                  </p>
                 </div>
 
                 {/* Card 2 - Productions */}
-                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-none w-14 h-14 rounded-lg bg-gradient-to-br from-[#cc5500] to-[#b24600] text-white flex items-center justify-center shadow"> 
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                        <rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
-                        <path d="M7 11h.01M12 11h.01M17 11h.01" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </div>
-
-                    <div className="flex-1 min-w-0">
-                      <div className="text-sm text-muted-foreground">Stage & Screen</div>
-                      <div className="text-2xl font-bold text-[#171a1f]">30+</div>
-                      <div className="text-sm text-slate-500 mt-2 break-words">Productions that showcase range and craft</div>
-                    </div>
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[300px] flex flex-col">
+                  {/* Icon */}
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#cc5500] to-[#b24600] text-white flex items-center justify-center shadow-inner mb-4">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden>
+                      <rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
+                      <path d="M7 11h.01M12 11h.01M17 11h.01" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                   </div>
+
+                  {/* Title */}
+                  <p className="text-sm text-gray-500">Stage & Screen</p>
+                  <p className="text-3xl font-bold text-[#171a1f]">30+</p>
+
+                  {/* Description */}
+                  <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+                    Productions that showcase range and craft.
+                  </p>
                 </div>
 
                 {/* Card 3 - Workshops */}
-                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
-                  <div className="flex items-start gap-4">
-                    <div className="flex-none w-14 h-14 rounded-lg bg-gradient-to-br from-[#f59e0b] to-[#d17d05] text-white flex items-center justify-center shadow"> 
-                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-                        <path d="M12 3v9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                        <path d="M7 17h10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
-                    </div>
+                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[300px] flex flex-col">
 
-                    <div className="flex-1 min-w-0">
-                      <div className="text-sm text-muted-foreground">Community</div>
-                      <div className="text-2xl font-bold text-[#171a1f]">Workshops</div>
-                      <div className="text-sm text-slate-500 mt-2 break-words">Mentoring, training and outreach projects for emerging artists</div>
-                    </div>
+                  {/* Icon */}
+                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#f59e0b] to-[#d17d05] text-white flex items-center justify-center shadow-inner mb-4">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden>
+                      <path d="M12 3v9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M7 17h10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                   </div>
+
+                  {/* Title */}
+                  <p className="text-sm text-gray-500">Community</p>
+                  <p className="text-2xl font-bold text-[#171a1f]">Workshops</p>
+
+                  {/* Description */}
+                  <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+                    Mentoring, training, and outreach projects for emerging artists.
+                  </p>
                 </div>
+
+
+
               </div>
             </div>
-
-            <div className="relative w-full flex justify-center md:justify-end">
+            <div className="w-full flex justify-center md:justify-end">
               <div className="w-[340px] md:w-[460px] lg:w-[520px]">
                 <HeroImage
                   src="/images/pkdai2.jpg"
