@@ -14,7 +14,7 @@ export default function HeroImage({
   rotate = -6
 }: HeroImageProps) {
   return (
-    <div className={`flex items-start justify-center ${className}`}>
+    <div className={`flex items-start justify-center ${className} relative z-10`}>
       {/* outer rotated container (doesn't include hover translate) */}
       <div style={{ transform: `rotate(${rotate}deg)` }} className="inline-block">
         <div className="relative transform transition-transform duration-300 hover:-translate-y-2">
@@ -36,8 +36,7 @@ export default function HeroImage({
             </div>
           </div>
 
-          {/* subtle drop shadow and corner accent to sell the polaroid look */}
-          <div className="absolute -inset-1 -z-10 rounded-md blur-md opacity-30 bg-black/10" />
+          {/* subtle drop shadow is handled by the card's box-shadow (avoid absolute overlays that create stacking issues) */}
         </div>
       </div>
     </div>

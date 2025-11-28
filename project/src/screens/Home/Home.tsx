@@ -9,12 +9,17 @@ import { SEO } from "../../components/SEO/SEO";
 export const Home = (): JSX.Element => {
   return (
     <div className="bg-white w-full relative">
-      <SEO title="Home" description="Buddhi Tamang — actor and storyteller. Portfolio, biography, media and booking information." path="/" image="/images/pkdai2.jpg" />
+      <SEO
+        title="Buddhi Tamang — Nepali Actor & Theatre Practitioner"
+        description="I’m Buddhi Tamang, an actor and theatre practitioner born in 1982 in Kavrepalanchok, Nepal. Rooted in Kathmandu’s theatre scene, I work across traditional Nepali theatre, contemporary film, and community workshops."
+        path="/buddhi-tamang"
+        image="/images/buddhi-tamang-portrait-og.svg"
+      />
       <Header activePage="Home" />
 
       {/* Hero */}
-      <section className="relative w-full md:h-[680px] bg-gradient-to-br from-foreground/2 to-white overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
+      <section className="relative w-full md:min-h-[680px] bg-gradient-to-br from-foreground/2 to-white overflow-visible isolate">
+        <div className="absolute inset-0 pointer-events-none -z-20">
           <div className="hidden md:block absolute -right-40 top-6 w-[560px] h-[560px] bg-gradient-to-tr from-[#fff1f2] to-[#fffaf0] rounded-full opacity-40 transform rotate-12 filter blur-3xl" />
         </div>
 
@@ -28,8 +33,12 @@ export const Home = (): JSX.Element => {
                 Versatile Actor & Storyteller — stage and screen performances that stay with you.
               </p>
 
+              <p className="text-black text-base md:text-lg leading-relaxed mb-4">
+                I’m Buddhi Tamang, an actor and theatre practitioner born in 1982 in Kavrepalanchok, Nepal. My journey began in Kathmandu’s vibrant cultural scene, where I discovered a deep passion for storytelling through theatre.
+              </p>
+
               <p className="text-black text-base md:text-lg leading-relaxed mb-6">
-                With a career blending traditional Nepali theatre and contemporary film, Buddhi brings authenticity and depth to every role. He works across theatre productions, feature films, and community workshops — shaping stories that matter.
+                Over the years, I’ve worked across traditional Nepali theatre, contemporary films, and community-based workshops. My craft is rooted in authenticity — bringing honesty, emotional depth, and cultural nuance to every character I portray. I believe stories have the power to connect us, and I’m committed to telling the ones that matter.
               </p>
 
               <div className="flex flex-wrap items-center gap-4 mb-6">
@@ -48,7 +57,7 @@ export const Home = (): JSX.Element => {
                   <Link to="/portfolio"><span className="relative z-10">Explore Portfolio</span></Link>
                 </Button>
 
-                <Button asChild variant="ghost">
+                <Button asChild variant="outline" size="lg">
                   <Link to="/contact"><span className="relative z-10">Book for Projects</span></Link>
                 </Button>
               </div>
@@ -153,7 +162,12 @@ export const Home = (): JSX.Element => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
               <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-3xl md:text-4xl mb-4">About Buddhi</h2>
-              <p className="text-muted-foreground mb-6">Actor, theatre practitioner and mentor. Buddhi works with companies and communities to create performances that combine traditional Nepali forms with contemporary storytelling.</p>
+              <p className="text-muted-foreground mb-4">I’m Buddhi Tamang, an actor and theatre practitioner born in 1982 in Kavrepalanchok, Nepal. My journey began in Kathmandu’s vibrant cultural scene, where I discovered a deep passion for storytelling through theatre.</p>
+
+              <p className="text-muted-foreground mb-4">Over the years, I’ve worked across traditional Nepali theatre, contemporary films, and community-based workshops. My craft is rooted in authenticity — bringing honesty, emotional depth, and cultural nuance to every character I portray. I believe stories have the power to connect us, and I’m committed to telling the ones that matter.</p>
+
+              <p className="text-muted-foreground mb-4">I work with companies and communities to create performances that combine traditional Nepali forms with contemporary storytelling, and I lead workshops that mentor emerging actors in voice, movement, and ensemble work.</p>
+
               <div className="flex gap-4">
                 <Button asChild size="lg">
                   <Link to="/biography">Read Biography</Link>

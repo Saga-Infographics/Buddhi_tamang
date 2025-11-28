@@ -38,7 +38,12 @@ const affiliations = [
 export const Biography = (): JSX.Element => {
   return (
     <div className="bg-white w-full relative">
-      <SEO title="Biography" description="Biography and achievements of Buddhi Tamang — actor and theatre practitioner." path="/biography" />
+      <SEO
+        title="Buddhi Tamang — Biography"
+        description="I’m Buddhi Tamang, an actor and theatre practitioner born in 1982 in Kavrepalanchok, Nepal. My work spans traditional Nepali theatre, contemporary film, and community workshops emphasizing cultural authenticity and emotional depth."
+        path="/buddhi-tamang/biography"
+        image="/images/buddhi-tamang-portrait-og.svg"
+      />
       <Header activePage="Biography" />
 
       <section className="w-full py-12 md:py-24 bg-white">
@@ -61,19 +66,70 @@ export const Biography = (): JSX.Element => {
                 Buddhi Tamang
               </h1>
               <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7 mb-6">
-                Buddhi Tamang (born 2 March 1983) is a Nepali film and theatre actor and practitioner known for his powerful stage presence and comic timing. Based in Kathmandu, he has appeared in numerous Nepali feature films, television series and stage productions. Buddhi married Anu Theeng in 2022.
+                I’m Buddhi Tamang, an actor and theatre practitioner born in 1982 in Kavrepalanchok, Nepal. My journey began in Kathmandu’s vibrant cultural scene, where I discovered a deep passion for storytelling through theatre.
               </p>
               <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7 mb-6">
-                Trained through intensive theatre workshops and long-term collaboration with Mandala Theatre, Buddhi blends physical theatre, traditional performance forms, and contemporary techniques to create emotionally resonant performances. His work frequently explores social themes and human relationships.
-              </p>
-              <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7 mb-6">
-                On stage and screen, Buddhi has taken on a variety of roles — from bold leading performances to subtle character work. He is widely recognized for his roles in productions such as "Sunkeshari," "Jhimke Mama," "Masantaar," and "Kaalaa Pathar Mathi." His performances are noted for their emotional depth, clarity, and physical commitment.
+                Over the years, I’ve worked across traditional Nepali theatre, contemporary films, and community-based workshops. My craft is rooted in authenticity — bringing honesty, emotional depth, and cultural nuance to every character I portray. I believe stories have the power to connect us, and I’m committed to telling the ones that matter.
               </p>
               <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7">
-                Outside performance, Buddhi teaches workshops for emerging actors and participates in community-based projects that use theatre as a tool for social engagement and education.
+                Trained through intensive theatre workshops and collaborations with Kathmandu companies, I blend physical theatre, traditional performance forms, and contemporary techniques to create emotionally resonant performances. I also teach workshops that mentor emerging actors in voice, movement, and ensemble work.
               </p>
             </div>
           </div>
+
+          {/* Impact & Mentoring - infographic-style cards */}
+          <section className="w-full py-12 bg-slate-50 rounded-lg mt-8">
+            <div className="container mx-auto px-6 md:px-40">
+              <div className="text-center mb-8">
+                <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-3xl md:text-4xl mb-2">Buddhi Tamang — Actor, Theatre Practitioner & Mentor</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">As an actor, theatre practitioner, and mentor, I collaborate with creative companies and local communities to develop performances that blend traditional Nepali theatre forms with contemporary storytelling.</p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#7B1E2C] text-white text-lg font-bold">20+</div>
+                    <div>
+                      <div className="text-sm text-muted-foreground">Years</div>
+                      <div className="text-lg font-semibold text-slate-800">Versatile Performer</div>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Over two decades of work across theatre, film, and television — memorable characters, strong stage presence, and a reputation for authenticity.</p>
+                </div>
+
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#cc5500] text-white text-lg font-bold">★</div>
+                    <div>
+                      <div className="text-sm text-muted-foreground">Cultural Impact</div>
+                      <div className="text-lg font-semibold text-slate-800">Recognizable Style</div>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">The signature “Hait” expression and memorable performances have become part of Nepali pop culture, influencing comedy and film audiences nationwide.</p>
+                </div>
+
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+                  <div className="flex items-center gap-4 mb-4">
+                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#f59e0b] text-white text-lg font-bold">WS</div>
+                    <div>
+                      <div className="text-sm text-muted-foreground">Community</div>
+                      <div className="text-lg font-semibold text-slate-800">Mentoring & Workshops</div>
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Leads workshops and community theatre projects focused on voice, movement, and ensemble work — nurturing emerging actors and creative confidence.</p>
+                </div>
+              </div>
+
+              <div className="mt-8 flex gap-4 justify-center">
+                <a href="/portfolio" className="inline-block">
+                  <button className="bg-[#cc5500] text-white px-6 py-3 rounded-full shadow hover:shadow-lg">See Work</button>
+                </a>
+                <a href="/contact" className="inline-block">
+                  <button className="border border-[#cc5500] text-[#cc5500] px-6 py-3 rounded-full">Contact</button>
+                </a>
+              </div>
+            </div>
+          </section>
 
           <div className="mb-24">
             <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-4xl tracking-[0] leading-[48px] mb-12">

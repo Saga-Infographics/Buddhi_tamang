@@ -9,11 +9,19 @@ export const SITE = {
   language: 'en-US',
 };
 
-export const structuredDataPerson = (overrides = {}) => ({
+export const structuredDataPerson = (overrides: Record<string, any> = {}) => ({
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: SITE.title,
   url: SITE.siteUrl,
+  description: SITE.description,
+  jobTitle: 'Actor',
+  image: SITE.siteUrl.replace(/\/$/, '') + SITE.defaultImage,
+  birthDate: '1982',
+  birthPlace: {
+    '@type': 'Place',
+    name: 'Kavrepalanchok, Nepal',
+  },
   sameAs: [],
   ...overrides,
 });
