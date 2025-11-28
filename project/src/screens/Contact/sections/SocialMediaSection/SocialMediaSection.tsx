@@ -25,7 +25,7 @@ export const SocialMediaSection = (): JSX.Element => {
             <img className="w-[22px] h-[22px]" alt="Gem" src="/gem.svg" />
           </div>
           <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#18386e] text-xl tracking-[0] leading-5 whitespace-nowrap">
-            Pradip Kumar Chaudhary
+            Buddhi Tamang
           </h1>
         </div>
 

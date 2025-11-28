@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: http://pradip-chaudhary.com.np/sitemap.xml
+Sitemap: https://buddhitamang.com/sitemap.xml

@@ -50,7 +50,7 @@ const photos = [
 export const Media = (): JSX.Element => {
   return (
     <div className="bg-white w-full relative">
-      <SEO title="Media" description="Media gallery — posters, photos and video links for Pradip Kumar Chaudhary's theatrical work." path="/media" />
+      <SEO title="Media" description="Media gallery — posters, photos and video links for Buddhi Tamang's theatrical work." path="/media" />
       <Header activePage="Media" />
 
       <section className="relative w-full py-12 md:py-24 bg-white">

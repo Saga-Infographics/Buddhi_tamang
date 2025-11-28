@@ -5,44 +5,44 @@ import { SEO } from "../../components/SEO/SEO";
 
 const achievements = [
   {
-    year: "2024",
-    title: "Director",
-    description: "Recent production at Mandala Theatre Nepal"
+    year: "2023",
+    title: "Lead Actor - Sunkeshari",
+    description: "Lead performance in a major Mandala Theatre production."
   },
   {
     year: "2020",
-    title: "Writer & Director - Jhimke Mama",
-    description: "Original play staged at Mandala Theatre Nepal"
+    title: "Actor / Collaborator - Jhimke Mama",
+    description: "Original production staged at Mandala Theatre Nepal."
   },
   {
     year: "2017",
-    title: "Writer & Director - Masaantaar",
-    description: "Political satire exploring superstitions in rural Nepal"
+    title: "Actor - Masantaar",
+    description: "Political satire exploring rural superstition and social change."
   },
   {
-    year: "2017",
-    title: "Director - Kala patthar mathi",
-    description: "Production at Mandala Theatre Nepal"
+    year: "2016",
+    title: "Actor - Kaalaa Pathar Mathi",
+    description: "Notable production performed across Kathmandu venues."
   }
 ];
 
 const training = [
   {
     institution: "Mandala Theatre Nepal",
-    degree: "Member of Executive Board (NGO)",
+    degree: "Company member & collaborator",
     year: "Present"
   },
   {
-    institution: "Mandala Theatre Nepal",
-    degree: "Member of Company Board",
-    year: "Present"
+    institution: "Theatre workshops & movement training",
+    degree: "Acting, voice and physical theatre",
+    year: "Various"
   }
 ];
 
 export const Biography = (): JSX.Element => {
   return (
     <div className="bg-white w-full relative">
-      <SEO title="Biography" description="Biography and achievements of Pradip Kumar Chaudhary — theatre director, playwright and actor." path="/biography" />
+      <SEO title="Biography" description="Biography and achievements of Buddhi Tamang — actor and theatre practitioner." path="/biography" />
       <Header activePage="Biography" />
 
       <section className="w-full py-12 md:py-24 bg-white">
@@ -51,31 +51,30 @@ export const Biography = (): JSX.Element => {
             <div className="aspect-[3/4] rounded-lg sticky top-8 overflow-hidden">
               <img
                 src="/images/pkdai2.jpg"
-                alt="Pradip Kumar Chaudhary"
+                alt="Buddhi Tamang"
                 className="w-full h-full object-cover block rounded-lg"
                 loading="lazy"
                 decoding="async"
                 onError={(e) => {
-                  // fallback to existing pkdai.png if pkdai2.jpg is missing
-                  (e.currentTarget as HTMLImageElement).src = '/images/pkdai.png';
+                  (e.currentTarget as HTMLImageElement).src = '/images/pkdai.jpg';
                 }}
               />
             </div>
             <div>
               <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#18386e] text-5xl tracking-[0] leading-[60px] mb-8">
-                Biography
+                Buddhi Tamang
               </h1>
               <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7 mb-6">
-                Pradip Kumar Chaudhary is a distinguished theatre director, writer, and actor based in Kathmandu, Nepal. As a key member of Mandala Theatre Nepal, one of the country's most influential theatrical organizations, he has dedicated his career to creating meaningful performances rooted in Nepali culture and social justice.
+                Buddhi Tamang is a Nepali actor and theatre practitioner known for his powerful stage presence and commitment to storytelling rooted in Nepali culture. Based in Kathmandu, Buddhi has worked extensively with Mandala Theatre Nepal and other companies across the country.
               </p>
               <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7 mb-6">
-                Serving on both the Executive Board and Company Board of Mandala Theatre Nepal, Pradip has been instrumental in shaping the organization's artistic direction. His work focuses on exploring traditional theatrical forms while addressing contemporary social issues through politically charged narratives and thought-provoking storytelling.
+                Trained through intensive theatre workshops and long-term collaboration with Mandala Theatre, Buddhi blends physical theatre, traditional performance forms, and contemporary techniques to create emotionally resonant performances. His work frequently explores social themes and human relationships.
               </p>
               <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7 mb-6">
-                As a director and playwright, Pradip has created several acclaimed productions including "Masaantaar" (2017), a political satire that uses the age-old practice of shamanism to examine Nepal's political landscape and rural superstitions. His other notable works include "Kala patthar mathi" and "Jhimke Mama" (2020), an original play based on a real story that explores themes of identity and village life.
+                On stage and screen, Buddhi has taken on a variety of roles — from bold leading performances to subtle character work. He is widely recognized for his roles in productions such as "Sunkeshari," "Jhimke Mama," "Masantaar," and "Kaalaa Pathar Mathi." His performances are noted for their emotional depth, clarity, and physical commitment.
               </p>
               <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7">
-                Beyond directing, Pradip has also performed as an actor in various productions, including "Sunkeshari," demonstrating his versatility as a theatre artist. His approach combines deep cultural understanding with modern theatrical techniques, creating performances that resonate with both local and international audiences.
+                Outside performance, Buddhi teaches workshops for emerging actors and participates in community-based projects that use theatre as a tool for social engagement and education.
               </p>
             </div>
           </div>

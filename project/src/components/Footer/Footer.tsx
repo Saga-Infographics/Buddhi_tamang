@@ -2,10 +2,10 @@ import { Separator } from "../ui/separator";
 import { Link } from "react-router-dom";
 
 const socialIcons = [
-  { src: "/container-3.svg", alt: "Facebook", url: "https://www.facebook.com/pradip.k.chaudhary.1" },
-  { src: "/container.svg", alt: "Instagram", url: "https://www.instagram.com/pradipkumar__chaudhary/" },
-  // YouTube (set to the provided channel)
-  { src: "/container-2.svg", alt: "YouTube", url: "https://www.youtube.com/@devdatcreations4526" },
+  { src: "/container-3.svg", alt: "Facebook", url: "#" },
+  { src: "/container.svg", alt: "Instagram", url: "#" },
+  // YouTube (placeholder)
+  { src: "/container-2.svg", alt: "YouTube", url: "#" },
 ];
 
 const sectionLinks = [
@@ -27,7 +27,7 @@ export const Footer = (): JSX.Element => {
                 <img className="w-5 h-5" alt="Gem" src="/gem.svg" />
               </div>
               <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-white text-xl">
-                Pradip Kumar Chaudhary
+                Buddhi Tamang
               </h3>
             </div>
             <p className="text-sm text-slate-300 max-w-md">
@@ -77,7 +77,7 @@ export const Footer = (): JSX.Element => {
         <Separator className="my-8 border-white/20" />
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white">
-          <div>© {new Date().getFullYear()} Pradip Kumar Chaudhary. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Buddhi Tamang. All rights reserved.</div>
           <div>Developed by Saga Infographics</div>
         </div>
       </div>

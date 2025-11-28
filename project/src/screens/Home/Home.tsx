@@ -9,7 +9,7 @@ import { SEO } from "../../components/SEO/SEO";
 export const Home = (): JSX.Element => {
   return (
     <div className="bg-white w-full relative">
-      <SEO title="Home" description="Actor, playwright and director Pradip Kumar Chaudhary — portfolio, biography and contact for bookings." path="/" image="/images/pkdai2.jpg" />
+      <SEO title="Home" description="Actor and theatre practitioner Buddhi Tamang — portfolio, biography and contact for bookings." path="/" image="/images/pkdai2.jpg" />
       <Header activePage="Home" />
       <section className="relative w-full h-auto md:h-[640px] bg-gradient-to-br from-slate-50 to-white">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -22,7 +22,7 @@ export const Home = (): JSX.Element => {
           <div className="w-full rounded-lg overflow-hidden shadow-md">
             <img
               src="/images/pkdai2.jpg"
-              alt="Pradip Kumar Chaudhary"
+              alt="Buddhi Tamang"
               className="w-full h-64 object-cover block"
               loading="lazy"
               decoding="async"
@@ -33,27 +33,26 @@ export const Home = (): JSX.Element => {
 
         <div className="relative md:absolute md:top-1/2 md:left-40 md:-translate-y-1/2 max-w-xl md:max-w-2xl px-6 md:px-0">
           <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#0f2650] text-4xl md:text-6xl tracking-tight leading-tight mb-4">
-            Pradip Kumar Chaudhary
+            Buddhi Tamang
           </h1>
           <p className="[font-family:'Playfair_Display',Helvetica] font-medium text-[#263247] text-lg md:text-2xl tracking-normal leading-8 mb-6">
-            Actor • Playwright • Director
+            Actor • Theatre Practitioner
           </p>
 
           <div className="max-w-xl mb-8">
             <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#36454f] text-base md:text-lg tracking-[0] leading-7 mb-4">
-              Born on 30 May 1987 in Triyuga Municipality (Ward 3, Motigada, Gaighat — Udayapur), Pradip Kumar Chaudhary is an actor, playwright, screenwriter and director whose work bridges stage and screen.
+              Buddhi Tamang is an actor and theatre practitioner from Nepal whose work spans stage and screen. He is known for performances that blend traditional Nepali theatre with contemporary approaches.
             </p>
 
             <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#36454f] text-base md:text-lg tracking-[0] leading-7 mb-4">
-              He joined Mandala Theatre Nepal in Kathmandu in 2010 and has since become a familiar presence in Nepali theatre — known for his committed performances and thoughtful direction.
+              Buddhi has collaborated with Mandala Theatre Nepal and other companies, appearing in productions that engage with social themes and community narratives. He also mentors emerging actors through workshops and community projects.
             </p>
 
             <ul className="list-disc list-inside text-sm text-[#49545a] space-y-1">
-              <li><strong>Parents:</strong> Jibendra Chaudhary &amp; Liladevi Chaudhary</li>
               <li><strong>Film debut:</strong> Maun (2013)</li>
-              <li><strong>Breakout role:</strong> 'Pk Don' in Hostel Return (2015)</li>
-              <li><strong>Recent work:</strong> Portrayed Maila in Barista Maila (2025)</li>
-              <li><strong>Affiliation:</strong> Mandala Theatre Nepal (since 2010)</li>
+              <li><strong>Notable stage work:</strong> Sunkeshari, Jhimke Mama, Masantaar</li>
+              <li><strong>Recent work:</strong> Barista Balaram (2025) — film role</li>
+              <li><strong>Affiliation:</strong> Mandala Theatre Nepal</li>
             </ul>
           </div>
 
@@ -72,8 +71,8 @@ export const Home = (): JSX.Element => {
           <div className="relative">
             <HeroImage
               src="/images/pkdai2.jpg"
-              alt="Pradip Kumar Chaudhary"
-              caption="Pradip Kumar Chaudhary"
+              alt="Buddhi Tamang"
+              caption="Buddhi Tamang"
               rotate={6}
               className="md:!w-[420px] md:!h-[520px]"
             />
@@ -94,24 +93,22 @@ export const Home = (): JSX.Element => {
             {[
               {
                 title: "Jhimke Mama",
-                type: "Play (Director & Writer)",
+                type: "Play (Performer)",
                 description:
-                  "An original play (2020) written and directed by Pradip Kumar Chaudhary, based on a real story by Durga Prasad Pandey. Set in the village of Deurali, it explores identity and community perspectives.",
-                // Put the poster image (place the file at public/images/jhimke-mama-poster.jpg)
+                  "A production in which Buddhi Tamang performed; this original play (2020) is based on a real story by Durga Prasad Pandey and explores identity within village life.",
                 image: "/images/jhimkey_mama.jpg"
               },
               {
                 title: "Masaantaar",
-                type: "Play (Writer & Director)",
+                type: "Play (Performer)",
                 description:
-                  "Story of a young boy and his sister who tries to go against superstitions but is threatened by the society and people who have strong belief on ghosts and traditional healers.",
+                  "A production exploring resistance to superstition and social pressures; Buddhi Tamang appeared in this piece which examines rural belief systems.",
                 image: "/images/masantaar.jpg"
               },
               {
                 title: "Kaalaa Patthar Maathi",
-                type: "Play (Director)",
-                description: "Sufferings of a mother residing in mountains who wants to keep her family alive and together.",
-                // Poster from Mandala Theatre page — place at public/images/kaalaa-patthar-maathi.jpg
+                type: "Play (Performer)",
+                description: "A stage work addressing family and survival in Nepal's mountain communities — featuring Buddhi Tamang in a principal role.",
                 image: "/images/kaalaa_pathar_mathi.jpg"
               }
             ].map((item, idx) => (
@@ -154,7 +151,7 @@ export const Home = (): JSX.Element => {
             <div className="aspect-square rounded-lg overflow-hidden">
               <img
                 src="/images/pkdai2.jpg"
-                alt="Pradip Kumar Chaudhary on bridge"
+                alt="Buddhi Tamang on bridge"
                 className="w-full h-full object-cover block rounded-lg"
                 loading="lazy"
                 decoding="async"

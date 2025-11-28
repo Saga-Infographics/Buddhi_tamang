@@ -2,12 +2,12 @@
   "version": "1.0.0",
   "source": "./index.html",
   "type": "module",
-  "name": "pradip-chaudhary-portfolio",
-  "description": "Pradip Kumar Chaudhary",
+  "name": "buddhi-tamang-portfolio",
+  "description": "Buddhi Tamang",
   "scripts": {
     "dev": "vite",
-  "build": "vite build && node scripts/generate-sitemap.js http://pradip-chaudhary.com.np",
-  "generate:sitemap": "node scripts/generate-sitemap.js http://pradip-chaudhary.com.np"
+  "build": "vite build && node scripts/generate-sitemap.js https://buddhitamang.com",
+  "generate:sitemap": "node scripts/generate-sitemap.js https://buddhitamang.com"
   },
   "dependencies": {
     "clsx": "2.1.1",

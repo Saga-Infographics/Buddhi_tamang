@@ -1,6 +1,6 @@
-# Pradip Kumar Chaudhary — Portfolio (Vite + React + Tailwind)
+# Buddhi Tamang — Portfolio (Vite + React + Tailwind)
 
-This repository is a small portfolio website for Pradip Kumar Chaudhary — actor, playwright, and director — built with Vite, React 18 and Tailwind CSS.
+This repository is a small portfolio website for Buddhi Tamang — actor and theatre practitioner — built with Vite, React 18 and Tailwind CSS.
 
 The site showcases biography, portfolio items (plays, directing credits and film appearances), media and contact information. The project is a lightweight static SPA using client-side routing.
 
@@ -24,9 +24,9 @@ This project is set up for local development using `npm run dev` and production 
 
 ## Short bio (from site)
 
-Pradip Kumar Chaudhary — Actor • Playwright • Director
+Buddhi Tamang — Actor • Theatre Practitioner
 
-Associated with Mandala Theatre Nepal, Pradip's work explores Nepali narratives and social themes rooted in local culture. Notable theatre works referenced in the site include:
+Associated with Mandala Theatre Nepal, Buddhi's work explores Nepali narratives and social themes rooted in local culture. Notable theatre works referenced in the site include:
 
 - Jhimke Mama (Writer & Director, 2020) — an original play based on a real story by Durga Prasad Pandey.
 - Masaantaar (Writer & Director, 2017) — political satire exploring superstition and social dynamics.
@@ -121,7 +121,7 @@ The Home page renders `/images/kaalaa-patthar-maathi.jpg` for the "Kaalaa Pattha
 
 ## License & credits
 
-This repository contains the source code for a personal portfolio. Content (text and images) belongs to Pradip Kumar Chaudhary (as provided). The codebase uses open-source libraries; check `package.json` for dependency licenses.
+This repository contains the source code for a personal portfolio. Content (text and images) belongs to Buddhi Tamang (as provided). The codebase uses open-source libraries; check `package.json` for dependency licenses.
 
 ---
 

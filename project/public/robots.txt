@@ -1,4 +1,4 @@
-# robots.txt for Pradip kumar Chaudhary site
+# robots.txt for Buddhi Tamang site
 # Allow all crawlers
 User-agent: *
 Allow: /

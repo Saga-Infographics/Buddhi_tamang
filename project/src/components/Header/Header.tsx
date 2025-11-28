@@ -15,9 +15,9 @@ const navigationItems = [
 ];
 
 const socialMediaIcons = [
-  { alt: "Facebook", src: "/facebook.svg", url: "https://www.facebook.com/pradip.k.chaudhary.1" },
-  { alt: "Instagram", src: "/instagram.svg", url: "https://www.instagram.com/pradipkumar__chaudhary/" },
-  { alt: "YouTube", src: "/youtube-1.svg", url: "https://www.youtube.com/@devdatcreations4526" },
+  { alt: "Facebook", src: "/facebook.svg", url: "#" },
+  { alt: "Instagram", src: "/instagram.svg", url: "#" },
+  { alt: "YouTube", src: "/youtube-1.svg", url: "#" },
 ];
 
 export const Header = ({ activePage }: HeaderProps): JSX.Element => {
@@ -42,9 +42,9 @@ export const Header = ({ activePage }: HeaderProps): JSX.Element => {
           </div>
           <div>
             <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#18386e] text-lg tracking-[0] leading-5">
-              Pradip Kumar Chaudhary
+              Buddhi Tamang
             </h1>
-            <p className="text-xs text-gray-500">Actor • Director • Playwright</p>
+            <p className="text-xs text-gray-500">Actor • Theatre Practitioner</p>
           </div>
         </Link>
 

@@ -10,7 +10,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const siteUrl = process.argv[2] || 'http://pradip-chaudhary.com.np/';
+const siteUrl = process.argv[2] || 'https://buddhitamang.com/';
 const routes = ['/', '/portfolio', '/biography', '/media', '/contact'];
 
 // Image list for portfolio page (keeps sitemap in sync with portfolio posters)

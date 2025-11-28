@@ -10,26 +10,26 @@ const socialMediaButtons = [
     icon: "/facebook-1.svg",
     alt: "Facebook",
     left: "left-40",
-    url: "https://www.facebook.com/pradip.k.chaudhary.1",
+    url: "#",
   },
   {
     icon: "/instagram.svg",
     alt: "Instagram",
     left: "left-[216px]",
-    url: "https://www.instagram.com/pradipkumar__chaudhary/",
+    url: "#",
   },
   {
     icon: "/youtube.svg",
     alt: "You tube",
     left: "left-[328px]",
-    url: "https://www.youtube.com/@devdatcreations4526",
+    url: "#",
   },
 ];
 
 export const Contact = (): JSX.Element => {
   return (
     <div className="bg-white w-full relative">
-      <SEO title="Contact" description="Contact and booking information for Pradip Kumar Chaudhary — email, phone, and social profiles." path="/contact" />
+      <SEO title="Contact" description="Contact and booking information for Buddhi Tamang — email, phone, and social profiles." path="/contact" />
       <Header activePage="Contact" />
 
       <section className="w-full py-12 md:py-24 bg-white">

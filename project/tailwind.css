@@ -1,3 +1,4 @@
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -113,13 +114,9 @@
     transform: translateY(calc(-100% - var(--gap)));
   }
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
   :root {
+    /* Cinematic Maroon & Gold - Light theme */
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
 
@@ -135,31 +132,35 @@
     --card: transparent;
     --card-foreground: 222.2 47.4% 11.2%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Primary = Maroon (actor personal branding) */
+    --primary: 350.5 61% 30%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --accent: 210 40% 96.1%;
+    /* Accent = Gold */
+    --accent: 46 65% 52%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 100% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --ring: 215 20.2% 65.1%;
+    --ring: 46 65% 45%;
 
     --radius: 0.5rem;
   }
 
   .dark {
+    /* Cinematic Maroon & Gold - Dark theme */
     --background: 224 71% 4%;
     --foreground: 213 31% 91%;
 
     --muted: 223 47% 11%;
     --muted-foreground: 215.4 16.3% 56.9%;
 
-    --accent: 216 34% 17%;
+    /* Accent darker for dark mode */
+    --accent: 46 64% 45%;
     --accent-foreground: 210 40% 98%;
 
     --popover: 224 71% 4%;
@@ -171,8 +172,9 @@
     --card: transparent;
     --card-foreground: 213 31% 91%;
 
+    /* Primary becomes light surface, foreground uses Maroon for contrast */
     --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 1.2%;
+    --primary-foreground: 350.5 61% 12%;
 
     --secondary: 222.2 47.4% 11.2%;
     --secondary-foreground: 210 40% 98%;
@@ -180,7 +182,7 @@
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --ring: 216 34% 17%;
+    --ring: 46 64% 38%;
 
     --radius: 0.5rem;
   }
