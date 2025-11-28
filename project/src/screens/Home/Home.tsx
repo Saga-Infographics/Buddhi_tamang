@@ -33,16 +33,23 @@ export const Home = (): JSX.Element => {
               </p>
 
               <div className="flex flex-wrap items-center gap-4 mb-6">
-                <Button asChild size="lg">
-                  <Link to="/media">Watch Reel</Link>
+                <Button asChild size="lg" className="shadow-2xl">
+                  <Link to="/media">
+                    <span className="relative z-10 flex items-center gap-3 px-1">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="shrink-0">
+                        <path d="M5 3v18l15-9L5 3z" fill="rgba(255,255,255,0.95)" />
+                      </svg>
+                      <span>Watch Reel</span>
+                    </span>
+                  </Link>
                 </Button>
 
-                <Button asChild variant="outline">
-                  <Link to="/portfolio">Explore Portfolio</Link>
+                <Button asChild variant="outline" size="lg">
+                  <Link to="/portfolio"><span className="relative z-10">Explore Portfolio</span></Link>
                 </Button>
 
                 <Button asChild variant="ghost">
-                  <Link to="/contact">Book for Projects</Link>
+                  <Link to="/contact"><span className="relative z-10">Book for Projects</span></Link>
                 </Button>
               </div>
 
@@ -64,9 +71,7 @@ export const Home = (): JSX.Element => {
                 </div>
 
                 <div className="flex items-center gap-4 bg-white/60 backdrop-blur-sm border border-slate-100 rounded-xl p-4 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
-                  <div className="flex-none">
-                    <span className="inline-block bg-[#7B1E2C] text-white text-sm font-semibold px-3 py-1 rounded-full">Workshops</span>
-                  </div>
+                  <div className="flex-none w-12 h-12 rounded-full bg-[#7B1E2C] text-white flex items-center justify-center text-lg font-bold">WS</div>
                   <div>
                     <div className="text-xs text-slate-500">Community</div>
                     <div className="text-sm md:text-base font-semibold text-slate-800">Workshops & mentoring</div>
@@ -153,7 +158,7 @@ export const Home = (): JSX.Element => {
                 <Button asChild size="lg">
                   <Link to="/biography">Read Biography</Link>
                 </Button>
-                <Button asChild variant="outline">
+                <Button asChild variant="outline" size="lg">
                   <Link to="/contact">Contact</Link>
                 </Button>
               </div>

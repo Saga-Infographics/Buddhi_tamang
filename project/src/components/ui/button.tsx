@@ -4,21 +4,21 @@ import * as React from "react";
 import { cn } from "../../lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-colors transition-transform duration-200 transform-gpu focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-colors transition-transform duration-200 transform-gpu relative overflow-hidden isolate focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
         default:
-          "bg-[#7B1E2C] text-white shadow-md hover:bg-[#6a1a26] hover:shadow-lg hover:-translate-y-1",
+          "bg-[#7B1E2C] text-white shadow-md hover:bg-[#6a1a26] hover:shadow-lg hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
         primary:
-          "bg-[#7B1E2C] text-white shadow-lg hover:bg-[#6a1a26] hover:shadow-xl hover:-translate-y-1",
+          "bg-[#7B1E2C] text-white shadow-lg hover:bg-[#6a1a26] hover:shadow-xl hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/10 before:via-white/20 before:to-white/10 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
-          "border-2 border-[#7B1E2C] bg-transparent text-[#7B1E2C] shadow-sm hover:bg-[#7B1E2C]/8 hover:text-white",
+          "border-2 border-[#7B1E2C] bg-white text-[#7B1E2C] shadow-sm hover:bg-[#7B1E2C]/90 hover:text-white hover:shadow-lg hover:-translate-y-1 before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/6 before:via-white/12 before:to-white/6 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "text-muted-foreground hover:bg-[#7B1E2C]/10 hover:text-[#7B1E2C]",
+        ghost: "text-muted-foreground hover:bg-[#7B1E2C]/10 hover:text-[#7B1E2C] before:content-[''] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-white/8 before:via-white/14 before:to-white/8 before:opacity-0 hover:before:opacity-100 hover:before:translate-x-0 before:transition-transform before:duration-500 before:z-0",
         link: "text-[#7B1E2C] underline-offset-4 hover:underline",
       },
       size: {
