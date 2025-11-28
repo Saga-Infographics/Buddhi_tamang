@@ -28,7 +28,7 @@ export const Home = (): JSX.Element => {
                 Versatile Actor & Storyteller — stage and screen performances that stay with you.
               </p>
 
-              <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">
+              <p className="text-black text-base md:text-lg leading-relaxed mb-6">
                 With a career blending traditional Nepali theatre and contemporary film, Buddhi brings authenticity and depth to every role. He works across theatre productions, feature films, and community workshops — shaping stories that matter.
               </p>
 
