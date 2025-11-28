@@ -64,7 +64,7 @@ export const Home = (): JSX.Element => {
 
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
                 {/* Card 1 - Experience */}
-                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
                   <div className="flex items-start gap-4">
                     <div className="flex-none w-14 h-14 rounded-lg bg-gradient-to-br from-[#7B1E2C] to-[#5a1620] text-white flex items-center justify-center shadow"> 
                       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
@@ -74,16 +74,16 @@ export const Home = (): JSX.Element => {
                       </svg>
                     </div>
 
-                    <div className="flex-1">
+                    <div className="flex-1 min-w-0">
                       <div className="text-sm text-muted-foreground">Years</div>
                       <div className="text-2xl font-bold text-[#171a1f]">15+</div>
-                      <div className="text-sm text-slate-500 mt-2">Experience across theatre, film, and television</div>
+                      <div className="text-sm text-slate-500 mt-2 break-words">Experience across theatre, film, and television</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Card 2 - Productions */}
-                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
                   <div className="flex items-start gap-4">
                     <div className="flex-none w-14 h-14 rounded-lg bg-gradient-to-br from-[#cc5500] to-[#b24600] text-white flex items-center justify-center shadow"> 
                       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
@@ -92,16 +92,16 @@ export const Home = (): JSX.Element => {
                       </svg>
                     </div>
 
-                    <div className="flex-1">
+                    <div className="flex-1 min-w-0">
                       <div className="text-sm text-muted-foreground">Stage & Screen</div>
                       <div className="text-2xl font-bold text-[#171a1f]">30+</div>
-                      <div className="text-sm text-slate-500 mt-2">Productions that showcase range and craft</div>
+                      <div className="text-sm text-slate-500 mt-2 break-words">Productions that showcase range and craft</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Card 3 - Workshops */}
-                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
                   <div className="flex items-start gap-4">
                     <div className="flex-none w-14 h-14 rounded-lg bg-gradient-to-br from-[#f59e0b] to-[#d17d05] text-white flex items-center justify-center shadow"> 
                       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
@@ -111,10 +111,10 @@ export const Home = (): JSX.Element => {
                       </svg>
                     </div>
 
-                    <div className="flex-1">
+                    <div className="flex-1 min-w-0">
                       <div className="text-sm text-muted-foreground">Community</div>
                       <div className="text-2xl font-bold text-[#171a1f]">Workshops</div>
-                      <div className="text-sm text-slate-500 mt-2">Mentoring, training and outreach projects for emerging artists</div>
+                      <div className="text-sm text-slate-500 mt-2 break-words">Mentoring, training and outreach projects for emerging artists</div>
                     </div>
                   </div>
                 </div>
@@ -198,65 +198,65 @@ export const Home = (): JSX.Element => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Card A - Overview */}
-            <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+            <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
               <div className="flex items-start gap-4">
                 <div className="flex-none w-12 h-12 rounded-md bg-[#7B1E2C] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                     <path d="M12 2a4 4 0 100 8 4 4 0 000-8zM6 20a6 6 0 0112 0" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <div className="text-sm text-muted-foreground">Actor & Practitioner</div>
                   <div className="font-semibold text-lg text-[#171a1f] mt-1">Blending tradition with contemporary storytelling</div>
-                  <p className="text-sm text-slate-500 mt-2">Collaborates with companies and communities to develop culturally rooted, modern narratives.</p>
+                  <p className="text-sm text-slate-500 mt-2 break-words">Collaborates with companies and communities to develop culturally rooted, modern narratives.</p>
                 </div>
               </div>
             </div>
 
             {/* Card B - Versatile Performer */}
-            <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+            <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
               <div className="flex items-start gap-4">
                 <div className="flex-none w-12 h-12 rounded-md bg-gradient-to-br from-[#cc5500] to-[#a84200] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                     <path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <div className="text-sm text-muted-foreground">Versatile Performer</div>
                   <div className="font-semibold text-lg text-[#171a1f] mt-1">Theatre, Film & Television</div>
-                  <p className="text-sm text-slate-500 mt-2">Over two decades of memorable characters, including roles in popular films and the sitcom <em>Meri Bassai</em>.</p>
+                  <p className="text-sm text-slate-500 mt-2 break-words">Over two decades of memorable characters, including roles in popular films and the sitcom <em>Meri Bassai</em>.</p>
                 </div>
               </div>
             </div>
 
             {/* Card C - Cultural Impact */}
-            <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+            <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
               <div className="flex items-start gap-4">
                 <div className="flex-none w-12 h-12 rounded-md bg-[#f59e0b] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                     <path d="M12 2l2.9 6.2L21 9l-5 3.8L17 21l-5-3.2L7 21l1-8.2L3 9l6.1-.8L12 2z" stroke="currentColor" strokeWidth="0.9" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <div className="text-sm text-muted-foreground">Cultural Impact</div>
                   <div className="font-semibold text-lg text-[#171a1f] mt-1">Recognizable Style & Moments</div>
-                  <p className="text-sm text-slate-500 mt-2">The signature “Hait” expression and memorable performances that resonate across generations.</p>
+                  <p className="text-sm text-slate-500 mt-2 break-words">The signature “Hait” expression and memorable performances that resonate across generations.</p>
                 </div>
               </div>
             </div>
 
             {/* Card D - Mentoring */}
-            <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+            <div className="bg-slate-50 rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
               <div className="flex items-start gap-4">
                 <div className="flex-none w-12 h-12 rounded-md bg-[#7B1E2C] text-white flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
                     <path d="M12 4v8M8 12h8M4 20h16" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <div className="text-sm text-muted-foreground">Mentoring & Community</div>
                   <div className="font-semibold text-lg text-[#171a1f] mt-1">Workshops & Creative Development</div>
-                  <p className="text-sm text-slate-500 mt-2">Leads community theatre, youth programs and workshops to nurture emerging talent and build creative confidence.</p>
+                  <p className="text-sm text-slate-500 mt-2 break-words">Leads community theatre, youth programs and workshops to nurture emerging talent and build creative confidence.</p>
                 </div>
               </div>
             </div>

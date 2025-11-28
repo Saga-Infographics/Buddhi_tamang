@@ -85,38 +85,54 @@ export const Biography = (): JSX.Element => {
                 <p className="text-muted-foreground max-w-2xl mx-auto">As an actor, theatre practitioner, and mentor, I collaborate with creative companies and local communities to develop performances that blend traditional Nepali theatre forms with contemporary storytelling.</p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#7B1E2C] text-white text-lg font-bold">20+</div>
-                    <div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {/* Overview card */}
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-none w-12 h-12 rounded-md bg-[#7B1E2C] text-white flex items-center justify-center">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                        <path d="M12 2a4 4 0 100 8 4 4 0 000-8zM6 20a6 6 0 0112 0" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-sm text-muted-foreground">Actor & Practitioner</div>
+                      <div className="font-semibold text-lg text-slate-800 mt-1">Blending tradition with contemporary storytelling</div>
+                      <p className="text-sm text-muted-foreground mt-2 break-words">Collaborates with companies and communities to develop culturally rooted, modern narratives.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-none w-12 h-12 flex items-center justify-center rounded-md bg-[#7B1E2C] text-white text-lg font-bold">20+</div>
+                    <div className="flex-1 min-w-0">
                       <div className="text-sm text-muted-foreground">Years</div>
                       <div className="text-lg font-semibold text-slate-800">Versatile Performer</div>
+                      <p className="text-sm text-muted-foreground mt-2 break-words">Over two decades of work across theatre, film, and television — memorable characters, strong stage presence, and a reputation for authenticity.</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground">Over two decades of work across theatre, film, and television — memorable characters, strong stage presence, and a reputation for authenticity.</p>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#cc5500] text-white text-lg font-bold">★</div>
-                    <div>
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-none w-12 h-12 flex items-center justify-center rounded-md bg-[#cc5500] text-white text-lg font-bold">★</div>
+                    <div className="flex-1 min-w-0">
                       <div className="text-sm text-muted-foreground">Cultural Impact</div>
                       <div className="text-lg font-semibold text-slate-800">Recognizable Style</div>
+                      <p className="text-sm text-muted-foreground mt-2 break-words">The signature “Hait” expression and memorable performances have become part of Nepali pop culture, influencing comedy and film audiences nationwide.</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground">The signature “Hait” expression and memorable performances have become part of Nepali pop culture, influencing comedy and film audiences nationwide.</p>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 flex items-center justify-center rounded-full bg-[#f59e0b] text-white text-lg font-bold">WS</div>
-                    <div>
+                <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1 overflow-hidden">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-none w-12 h-12 flex items-center justify-center rounded-md bg-[#f59e0b] text-white text-lg font-bold">WS</div>
+                    <div className="flex-1 min-w-0">
                       <div className="text-sm text-muted-foreground">Community</div>
                       <div className="text-lg font-semibold text-slate-800">Mentoring & Workshops</div>
+                      <p className="text-sm text-muted-foreground mt-2 break-words">Leads workshops and community theatre projects focused on voice, movement, and ensemble work — nurturing emerging actors and creative confidence.</p>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground">Leads workshops and community theatre projects focused on voice, movement, and ensemble work — nurturing emerging actors and creative confidence.</p>
                 </div>
               </div>
 
