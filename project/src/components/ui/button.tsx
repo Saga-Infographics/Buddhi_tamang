@@ -4,27 +4,27 @@ import * as React from "react";
 import { cn } from "../../lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full text-sm font-medium transition-colors transition-transform duration-200 transform-gpu focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
         default:
-          "bg-[#7B1E2C] text-white shadow hover:bg-[#6a1a26]",
+          "bg-[#7B1E2C] text-white shadow-md hover:bg-[#6a1a26] hover:shadow-lg hover:-translate-y-1",
         primary:
-          "bg-[#7B1E2C] text-white shadow-lg hover:bg-[#6a1a26]",
+          "bg-[#7B1E2C] text-white shadow-lg hover:bg-[#6a1a26] hover:shadow-xl hover:-translate-y-1",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
-          "border border-input bg-background shadow-sm hover:bg-[#7B1E2C]/10 hover:border-[#7B1E2C] hover:text-[#7B1E2C]",
+          "border-2 border-[#7B1E2C] bg-transparent text-[#7B1E2C] shadow-sm hover:bg-[#7B1E2C]/8 hover:text-white",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "hover:bg-[#7B1E2C]/10 hover:text-[#7B1E2C]",
+        ghost: "text-muted-foreground hover:bg-[#7B1E2C]/10 hover:text-[#7B1E2C]",
         link: "text-[#7B1E2C] underline-offset-4 hover:underline",
       },
       size: {
-        default: "h-9 px-4 py-2",
-        sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-10 rounded-md px-8",
+        default: "h-11 px-6",
+        sm: "h-9 px-3 text-xs",
+        lg: "h-12 px-8",
         icon: "h-9 w-9",
       },
     },

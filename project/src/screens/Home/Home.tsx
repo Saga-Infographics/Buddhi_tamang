@@ -33,28 +33,44 @@ export const Home = (): JSX.Element => {
               </p>
 
               <div className="flex flex-wrap items-center gap-4 mb-6">
-                <Button asChild className="bg-primary text-primary-foreground px-6 py-3 rounded-md shadow-lg hover:shadow-xl transition-transform hover:-translate-y-0.5">
+                <Button asChild size="lg">
                   <Link to="/media">Watch Reel</Link>
                 </Button>
 
-                <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary/10 px-5 py-3 rounded-md">
+                <Button asChild variant="outline">
                   <Link to="/portfolio">Explore Portfolio</Link>
                 </Button>
 
-                <Button asChild variant="ghost" className="text-muted-foreground px-4 py-2">
+                <Button asChild variant="ghost">
                   <Link to="/contact">Book for Projects</Link>
                 </Button>
               </div>
 
-              <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
-                <div>
-                  <strong className="text-primary">15+</strong> years experience
+              <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="flex items-center gap-4 bg-white/60 backdrop-blur-sm border border-slate-100 rounded-xl p-4 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+                  <div className="flex-none w-12 h-12 rounded-full bg-[#7B1E2C] text-white flex items-center justify-center text-lg font-bold">15+</div>
+                  <div>
+                    <div className="text-xs text-slate-500">Years</div>
+                    <div className="text-sm md:text-base font-semibold text-slate-800">Experience</div>
+                  </div>
                 </div>
-                <div>
-                  <strong className="text-primary">30+</strong> productions
+
+                <div className="flex items-center gap-4 bg-white/60 backdrop-blur-sm border border-slate-100 rounded-xl p-4 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+                  <div className="flex-none w-12 h-12 rounded-full bg-[#7B1E2C] text-white flex items-center justify-center text-lg font-bold">30+</div>
+                  <div>
+                    <div className="text-xs text-slate-500">Stage & Screen</div>
+                    <div className="text-sm md:text-base font-semibold text-slate-800">Productions</div>
+                  </div>
                 </div>
-                <div>
-                  <strong className="text-primary">Workshops</strong> & mentoring
+
+                <div className="flex items-center gap-4 bg-white/60 backdrop-blur-sm border border-slate-100 rounded-xl p-4 shadow-sm hover:shadow-lg transition-transform transform-gpu hover:-translate-y-1">
+                  <div className="flex-none">
+                    <span className="inline-block bg-[#7B1E2C] text-white text-sm font-semibold px-3 py-1 rounded-full">Workshops</span>
+                  </div>
+                  <div>
+                    <div className="text-xs text-slate-500">Community</div>
+                    <div className="text-sm md:text-base font-semibold text-slate-800">Workshops & mentoring</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -119,7 +135,7 @@ export const Home = (): JSX.Element => {
           </div>
 
           <div className="text-center mt-12">
-            <Button asChild className="bg-primary text-primary-foreground px-6 py-3 rounded-md">
+            <Button asChild size="lg">
               <Link to="/portfolio">See Full Portfolio</Link>
             </Button>
           </div>
@@ -134,10 +150,10 @@ export const Home = (): JSX.Element => {
               <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-3xl md:text-4xl mb-4">About Buddhi</h2>
               <p className="text-muted-foreground mb-6">Actor, theatre practitioner and mentor. Buddhi works with companies and communities to create performances that combine traditional Nepali forms with contemporary storytelling.</p>
               <div className="flex gap-4">
-                <Button asChild className="bg-primary text-primary-foreground px-6 py-3 rounded-md">
+                <Button asChild size="lg">
                   <Link to="/biography">Read Biography</Link>
                 </Button>
-                <Button asChild variant="outline" className="border-muted text-muted-foreground px-5 py-3 rounded-md">
+                <Button asChild variant="outline">
                   <Link to="/contact">Contact</Link>
                 </Button>
               </div>
