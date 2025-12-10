@@ -1,14 +1,18 @@
-// React import removed because JSX runtime is automatic in this project (no direct React symbol usage)
 import { Button } from "../../components/ui/button";
 import { Link } from "react-router-dom";
 import HeroImage from "../../components/ui/HeroImage";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { SEO } from "../../components/SEO/SEO";
+import { useEffect } from "react";
 
 export const Home = (): JSX.Element => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="bg-gradient-to-b from-[#fff5f2] to-white w-full relative">
+    <div className="bg-gradient-to-b from-[#fff5f2] to-white w-full relative overflow-x-hidden">  {/* FIX ADDED */}
       <SEO
         title="Buddhi Tamang — Nepali Actor, Comedian & Theatre Practitioner"
         description="Discover the journey of Buddhi Tamang, a versatile Nepali actor and theatre practitioner known for his impactful characters, comedic style, and cultural storytelling in film, theatre, and television."
@@ -19,7 +23,7 @@ export const Home = (): JSX.Element => {
       <Header activePage="Home" />
 
       {/* Hero */}
-      <section className="relative w-full md:min-h-[680px] bg-gradient-to-br from-foreground/2 to-white overflow-visible isolate">
+      <section className="relative w-full min-h-[600px] md:min-h-[680px] bg-gradient-to-br from-foreground/2 to-white overflow-visible isolate">
         <div className="absolute inset-0 pointer-events-none -z-20">
           <div className="hidden md:block absolute -right-40 top-6 w-[560px] h-[560px] bg-gradient-to-tr from-[#fff1f2] to-[#fffaf0] rounded-full opacity-40 transform rotate-12 filter blur-3xl" />
         </div>
@@ -43,7 +47,7 @@ export const Home = (): JSX.Element => {
                 Over the years, I’ve worked across traditional theatre, mainstream Nepali cinema, comedic television, and community-based workshops. My focus is on delivering honest, emotionally grounded performances that connect deeply with audiences.
               </p>
 
-              <div className="flex flex-wrap items-center gap-4 mb-6">
+              <div className="flex flex-wrap items-center gap-3 sm:gap-4">
                 <Button asChild size="lg" className="shadow-2xl">
                   <Link to="/media">
                     <span className="relative z-10 flex items-center gap-3 px-1">
@@ -67,74 +71,72 @@ export const Home = (): JSX.Element => {
                   </Link>
                 </Button>
               </div>
-
-              {/* Stat Cards */}
-              <div className="mt-4 sm:mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                {/* Card 1 */}
-                <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[240px] sm:min-h-[280px] lg:min-h-[300px] flex flex-col">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-[#7B1E2C] to-[#5a1620] text-white flex items-center justify-center shadow-inner mb-3 sm:mb-4">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="sm:w-6 sm:h-6">
-                      <path d="M12 2v20M5 7h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      <circle cx="8" cy="17" r="1.6" fill="currentColor" />
-                      <circle cx="16" cy="17" r="1.6" fill="currentColor" />
-                    </svg>
-                  </div>
-
-                  <p className="text-xs sm:text-sm text-gray-500">Years</p>
-                  <p className="text-2xl sm:text-3xl font-bold text-[#171a1f]">15+</p>
-
-                  <p className="text-xs sm:text-sm text-gray-600 mt-2 sm:mt-3 leading-relaxed">
-                    Extensive experience in theatre, film, and television comedy.
-                  </p>
-                </div>
-
-                {/* Card 2 */}
-                <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[240px] sm:min-h-[280px] lg:min-h-[300px] flex flex-col">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-[#cc5500] to-[#b24600] text-white flex items-center justify-center shadow-inner mb-3 sm:mb-4">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                      <rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
-                      <path d="M7 11h.01M12 11h.01M17 11h.01" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-
-                  <p className="text-sm text-gray-500">Stage & Screen</p>
-                  <p className="text-3xl font-bold text-[#171a1f]">30+</p>
-
-                  <p className="text-sm text-gray-600 mt-3 leading-relaxed">
-                    A rich collection of films, theatre productions, and television roles.
-                  </p>
-                </div>
-
-                {/* Card 3 */}
-                <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[240px] sm:min-h-[280px] lg:min-h-[300px] flex flex-col">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-[#f59e0b] to-[#d17d05] text-white flex items-center justify-center shadow-inner mb-3 sm:mb-4">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                      <path d="M12 3v9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M7 17h10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                  </div>
-
-                  <p className="text-sm text-gray-500">Community</p>
-                  <p className="text-2xl font-bold text-[#171a1f]">Workshops</p>
-
-                  <p className="text-sm text-gray-600 mt-3 leading-relaxed">
-                    Supporting young performers through creative workshops and community theatre.
-                  </p>
-                </div>
-              </div>
             </div>
 
-            <div className="w-full flex justify-center md:justify-end mt-6 md:mt-0">
-              <div className="w-full max-w-[340px] sm:max-w-[400px] md:w-[460px] lg:w-[520px]">
+            {/* FIX: WRAPPED ROTATED IMAGE TO PREVENT OVERFLOW */}
+            <div className="w-full flex justify-center md:justify-end mt-6 md:mt-0 overflow-hidden">
+              <div className="w-full max-w-[340px] sm:max-w-[400px] md:w-[460px] lg:w-[520px] overflow-hidden rounded-lg shadow-2xl">
                 <HeroImage
                   src="/images/pkdai2.jpg"
                   alt="Portrait of Buddhi Tamang"
                   caption="Buddhi Tamang"
                   rotate={4}
-                  className="rounded-lg shadow-2xl w-full"
+                  className="rounded-lg w-full"
                 />
               </div>
+            </div>
+          </div>
+
+          {/* Stat Cards */}
+          <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#7B1E2C] to-[#5a1620] text-white flex items-center justify-center shadow-inner mb-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2v20M5 7h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  <circle cx="8" cy="17" r="1.6" fill="currentColor" />
+                  <circle cx="16" cy="17" r="1.6" fill="currentColor" />
+                </svg>
+              </div>
+
+              <p className="text-sm text-gray-500">Years</p>
+              <p className="text-3xl font-bold text-[#171a1f]">15+</p>
+
+              <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+                Extensive experience in theatre, film, and television comedy.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#cc5500] to-[#b24600] text-white flex items-center justify-center shadow-inner mb-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
+                  <path d="M7 11h.01M12 11h.01M17 11h.01" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+
+              <p className="text-sm text-gray-500">Stage & Screen</p>
+              <p className="text-3xl font-bold text-[#171a1f]">30+</p>
+
+              <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+                A rich collection of films, theatre productions, and television roles.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 flex flex-col">
+              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#f59e0b] to-[#d17d05] text-white flex items-center justify-center shadow-inner mb-4">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3v9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M7 17h10" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+
+              <p className="text-sm text-gray-500">Community</p>
+              <p className="text-2xl font-bold text-[#171a1f]">Workshops</p>
+
+              <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+                Supporting young performers through creative workshops and community theatre.
+              </p>
             </div>
           </div>
         </div>
@@ -158,21 +160,21 @@ export const Home = (): JSX.Element => {
                 title: "Kabaddi Franchise",
                 tag: "Film Series",
                 description:
-                  "Featuring Buddhi Tamang as the much-loved Chhantyal character, known for the viral 'Hait' expression. His comedic timing and cultural humor played a major role in the franchise's nationwide popularity.",
+                  "Featuring Buddhi Tamang as the much-loved Chhantyal character, known for the viral 'Hait' expression...",
                 image: "/images/kabaddi.jpg"
               },
               {
                 title: "Chhakka Panja Franchise",
                 tag: "Film Series",
                 description:
-                  "One of Nepal's most successful comedy franchises, where Buddhi Tamang’s unforgettable performances enhance the humor, heart, and storytelling of each film.",
+                  "One of Nepal's most successful comedy franchises, where Buddhi Tamang’s performances shine...",
                 image: "/images/chhakka-panja.jpg"
               },
               {
                 title: "Milarepa",
                 tag: "Theatre",
                 description:
-                  "A powerful theatrical production co-produced and co-directed by Buddhi Tamang, exploring the spiritual journey of Milarepa through expressive stagecraft and deep narrative storytelling.",
+                  "A powerful theatrical production co-produced and co-directed by Buddhi Tamang...",
                 image: "/images/milarepa.jpg"
               },
             ].map((item, idx) => (
@@ -218,9 +220,7 @@ export const Home = (): JSX.Element => {
               Buddhi Tamang — Actor, Theatre Practitioner & Mentor
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Known for blending traditional Nepali theatre with modern storytelling, Buddhi Tamang
-              delivers powerful performances across film, stage, and television while mentoring
-              emerging artists.
+              Known for blending traditional Nepali theatre with modern storytelling...
             </p>
           </div>
 
