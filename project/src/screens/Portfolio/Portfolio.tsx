@@ -4,90 +4,42 @@ import { Footer } from "../../components/Footer";
 import { SEO } from "../../components/SEO/SEO";
 import { Button } from "../../components/ui/button";
 
-const categories = ["All", "Director", "Actor", "Writer"];
+const categories = ["All", "Film", "Direction", "Theatre"];
 
 const portfolioItems = [
-  {
-    title: "Barista Balaram",
-    category: "Actor",
-    year: "2025",
-    role: "Actor",
-    description: "Recently released film in which he played the role of Maila.",
-    image: "/images/barista-balaram_2.jpg",
-  },
-  {
-    title: "Hostel Returns",
-    category: "Actor",
-    year: "2015",
-    role: "Actor (Breakout role: 'Pk Don')",
-    description: "Breakout film role in the popular Nepali movie 'Hostel Returns' (2015).",
-    image: "/images/hostel_return2.jpg",
-  },
-  {
-    title: "Maun",
-    category: "Actor",
-    year: "2013",
-    role: "Actor",
-    description: "Maun (2013) - Appeared as Aman's friend in the film.",
-    image: "/images/maun_2013.jpg",
-  },
-  {
-    title: "Jhimke Mama",
-    category: "Director",
-    year: "2020",
-    role: "Writer & Director",
-    description: "Original play based on a real story told by advocate Durga Prasad Pandey, set in imaginary village Deurali",
-    image: "/images/jhimkey_mama.jpg",
-  },
-  {
-    title: "Masaantaar",
-    category: "Director",
-    year: "2017",
-    role: "Writer & Director",
-    description: "Story of a young boy and his sister who tries to go against superstitions but is threatened by the society and people who have strong belief on ghosts and traditional healers.",
-    image: "/images/masantaar.jpg",
-  },
-  {
-    title: "Kalapattharmathi",
-    category: "Director",
-    year: "2017",
-    role: "Director",
-    description: "Theatrical production at Mandala Theatre Nepal",
-    image: "/images/kaalaa_pathar_mathi.jpg",
-  },
-  {
-    title: "Aakash Ko Bato",
-    category: "Director",
-    year: "—",
-    role: "Director",
-    description:
-      "Stage production presented by Mandala Theatre (Aakash Ko Bato / The Sky Route). Visit Mandala Theatre for production details and credits.",
-    image: "/images/aakashkobato.webp",
-  },
-  {
-    title: "Sunkeshari",
-    category: "Actor",
-    year: "2023",
-    role: "Actor",
-    description: "A play based on a Karnali folk story; premiered at Rongo Harshe Bingo Barshe (Dhaka, 2012) and opened Kathmandu International Theatre Festival 2012; later staged at major festivals including Bharat Rang Mahotsav.",
-    image: "/images/Final_sunkeshari-poster-KTM.jpg",
-  },
-  {
-    title: "Masaantaar",
-    category: "Writer",
-    year: "2017",
-    role: "Playwright",
-    description: "60-minute play exploring contradictions between conservative and modern mindsets in rural villages",
-    image: "/images/masantaar.jpg",
-  },
-  {
-    title: "Jhimke Mama",
-    category: "Writer",
-    year: "2020",
-    role: "Playwright",
-    description: "Original play based on a real story told by advocate Durga Prasad Pandey, set in imaginary village Deurali",
-    image: "/images/jhimkey_mama.jpg",
-  },
+  // Films
+  { title: "Kabaddi 4: The Final Match", category: "Film", year: "2023", role: "Chhantyal", description: "Popular sports comedy film series", image: "/images/kabaddi4.jpg" },
+  { title: "Chhakka Panja 4", category: "Film", year: "2023", role: "Budhhi", description: "Hit comedy franchise", image: "/images/chhakka-panja4.jpg" },
+  { title: "Mantra", category: "Film", year: "2022", role: "Supporting Role", description: "Nepali feature film", image: "/images/mantra.jpg" },
+  { title: "Senti Virus", category: "Film", year: "2020", role: "Dhrubaram's neighbour", description: "Comedy film", image: "/images/senti-virus.jpg" },
+  { title: "Bir Bikram 2", category: "Film", year: "2019", role: "Bagh Bahadur", description: "Action sequel", image: "/images/bir-bikram2.jpg" },
+  { title: "Saili", category: "Film", year: "2019", role: "Supporting", description: "Nepali drama", image: "/images/saili.jpg" },
+  { title: "Chhakka Panja 3", category: "Film", year: "2018", role: "Budhhi", description: "Comedy franchise installment", image: "/images/chhakka-panja3.jpg" },
+  { title: "Damaruko Dandibiyo", category: "Film", year: "2018", role: "Mukhiya", description: "Village drama", image: "/images/damaruko.jpg" },
+  { title: "Kohalpur Express", category: "Film", year: "2018", role: "Sher Bahadur", description: "Road movie", image: "/images/kohalpur.jpg" },
+  { title: "Panche Baja", category: "Film", year: "2018", role: "Sahile", description: "Nepali feature film", image: "/images/panche-baja.jpg" },
+  { title: "Mr. Jholay", category: "Film", year: "2018", role: "Guna Prasad", description: "Comedy film", image: "/images/mr-jholay.jpg" },
+  { title: "A Mero Hajur 2", category: "Film", year: "2017", role: "Shree Dharmendra", description: "Romantic film sequel", image: "/images/a-mero-hajur2.jpg" },
+  { title: "Ghampani", category: "Film", year: "2017", role: "Nima", description: "Social drama", image: "/images/ghampani.jpg" },
+  { title: "Bijuli Machine", category: "Film", year: "2016", role: "Ram Dai", description: "Rural electrification story", image: "/images/bijuli-machine.jpg" },
+  { title: "Purano Dunga", category: "Film", year: "2016", role: "Bideshi", description: "Romantic drama", image: "/images/purano-dunga.jpg" },
+  { title: "Chhakka Panja", category: "Film", year: "2016", role: "Budhhi", description: "Hit comedy that started the franchise", image: "/images/chhakka-panja.jpg" },
+  { title: "Kabaddi Kabaddi", category: "Film", year: "2015", role: "Chhantyal", description: "Sports comedy sequel", image: "/images/kabaddi-kabaddi.jpg" },
+  { title: "Woda Number 6", category: "Film", year: "2015", role: "Budhhi", description: "Political satire comedy", image: "/images/woda-number6.jpg" },
+  { title: "Hostel Returns", category: "Film", year: "2015", role: "Pk Don (Breakout role)", description: "Breakout film role in the popular Nepali movie", image: "/images/hostel_return2.jpg" },
+  { title: "Shaabhala", category: "Film", year: "2014", role: "Ram", description: "Short film", image: "/images/shaabhala.jpg" },
+  { title: "Talakjung vs Tulke", category: "Film", year: "2014", role: "Hanuman", description: "Comedy film", image: "/images/talakjung.jpg" },
+  { title: "Kabaddi", category: "Film", year: "2014", role: "Chhantyal", description: "Popular sports comedy that launched the series", image: "/images/kabaddi.jpg" },
+  { title: "Saanghuro", category: "Film", year: "2013", role: "Nare", description: "Early film appearance", image: "/images/saanghuro.jpg" },
+  { title: "Maun", category: "Film", year: "2013", role: "Aman's friend", description: "Appeared in supporting role", image: "/images/maun_2013.jpg" },
+  { title: "Barista Balaram", category: "Film", year: "2025", role: "Maila", description: "Recently released film", image: "/images/barista-balaram_2.jpg" },
+  
+  // Theatre
+  { title: "Sunkeshari", category: "Theatre", year: "2023", role: "Actor", description: "A play based on a Karnali folk story; premiered at Rongo Harshe Bingo Barshe (Dhaka, 2012) and opened Kathmandu International Theatre Festival 2012; later staged at major festivals including Bharat Rang Mahotsav.", image: "/images/Final_sunkeshari-poster-KTM.jpg" },
+  { title: "Jhimke Mama", category: "Theatre", year: "2020", role: "Writer & Director", description: "Original play based on a real story told by advocate Durga Prasad Pandey, set in imaginary village Deurali", image: "/images/jhimkey_mama.jpg" },
+  { title: "Masaantaar", category: "Theatre", year: "2017", role: "Writer & Director", description: "Story of a young boy and his sister who tries to go against superstitions but is threatened by the society and people who have strong belief on ghosts and traditional healers.", image: "/images/masantaar.jpg" },
+  { title: "Kalapattharmathi", category: "Theatre", year: "2017", role: "Director", description: "Theatrical production at Mandala Theatre Nepal", image: "/images/kaalaa_pathar_mathi.jpg" },
+  { title: "Aakash Ko Bato", category: "Theatre", year: "—", role: "Director", description: "Stage production presented by Mandala Theatre (Aakash Ko Bato / The Sky Route). Visit Mandala Theatre for production details and credits.", image: "/images/aakashkobato.webp" },
 ];
 
 export const Portfolio = (): JSX.Element => {
@@ -134,7 +86,7 @@ export const Portfolio = (): JSX.Element => {
             Portfolio
           </h1>
           <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg tracking-[0] leading-7 mb-12 text-center max-w-3xl mx-auto">
-            A collection of theatrical works spanning directing, writing, and acting. Each production explores Nepali culture, social issues, and the human experience through powerful storytelling.
+            A comprehensive collection of film and theatrical works spanning acting, directing, and writing. From blockbuster comedies to intimate stage productions, each work explores Nepali culture, social issues, and the human experience.
           </p>
 
           <div className="flex justify-center gap-4 mb-16">
