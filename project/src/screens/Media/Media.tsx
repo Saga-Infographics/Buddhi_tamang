@@ -262,9 +262,9 @@ export const Media = (): JSX.Element => {
       <Header activePage="Media" />
 
       {/* Hero Section */}
-      <section className="relative w-full py-16 bg-gradient-to-br from-[#7B1E2C]/5 to-white">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-4xl md:text-5xl tracking-[0] leading-tight mb-4">
+      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#7B1E2C]/5 to-white">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-3xl sm:text-4xl md:text-5xl tracking-[0] leading-tight mb-3 sm:mb-4">
             Media Gallery
           </h1>
           <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg md:text-xl tracking-[0] leading-7 max-w-3xl">
@@ -274,10 +274,10 @@ export const Media = (): JSX.Element => {
       </section>
 
       {/* Featured Videos Section */}
-      <section className="relative w-full py-16 bg-white">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-3xl md:text-4xl">
+      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+          <div className="flex items-center justify-between mb-6 sm:mb-8">
+            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-2xl sm:text-3xl md:text-4xl">
               Featured Videos
             </h2>
           </div>
@@ -329,10 +329,10 @@ export const Media = (): JSX.Element => {
       </section>
 
       {/* Featured Iconic Films Section */}
-      <section className="relative w-full py-16 bg-gradient-to-br from-[#7B1E2C]/5 to-white">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <div className="text-center mb-12">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-3xl md:text-4xl mb-4">
+      <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#7B1E2C]/5 to-white">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
               Iconic Film Performances
             </h2>
             <p className="text-[#171a1fcc] text-lg max-w-3xl mx-auto">

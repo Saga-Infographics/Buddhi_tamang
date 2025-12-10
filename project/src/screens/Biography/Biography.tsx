@@ -44,9 +44,9 @@ export const Biography = (): JSX.Element => {
       />
       <Header activePage="Biography" />
 
-      <section className="w-full bg-gradient-to-b from-[#fff5f2] to-white py-16 md:py-28">
-        <div className="container mx-auto px-6 md:px-40">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center mb-24">
+      <section className="w-full bg-gradient-to-b from-[#fff5f2] to-white py-10 sm:py-16 md:py-20 lg:py-28">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-16 items-center mb-12 sm:mb-16 md:mb-24">
             {/* Portrait */}
             <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
               <img
@@ -59,8 +59,8 @@ export const Biography = (): JSX.Element => {
 
             {/* Biography Text */}
             <div>
-              <h1 className="text-[#7B1E2C] font-bold text-5xl md:text-6xl mb-6">Buddhi Tamang</h1>
-              <p className="text-[#171a1fcc] text-lg md:text-xl mb-4 leading-relaxed">
+              <h1 className="text-[#7B1E2C] font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 sm:mb-6">Buddhi Tamang</h1>
+              <p className="text-[#171a1fcc] text-base sm:text-lg md:text-xl mb-3 sm:mb-4 leading-relaxed">
                 Buddhi Tamang is a celebrated Nepali actor, theatre practitioner, and mentor. Born in 1982 in Kavrepalanchok, Nepal, he has become a household name through his signature comedic roles and versatile performances across theatre and film.
               </p>
               <p className="text-[#171a1fcc] text-lg md:text-xl mb-4 leading-relaxed">
@@ -73,9 +73,9 @@ export const Biography = (): JSX.Element => {
           </div>
 
           {/* Affiliations */}
-          <div className="mb-24">
-            <h2 className="text-[#7B1E2C] text-4xl font-semibold mb-12">Professional Roles & Affiliations</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+          <div className="mb-12 sm:mb-16 md:mb-24">
+            <h2 className="text-[#7B1E2C] text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 sm:mb-8 md:mb-12">Professional Roles & Affiliations</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {affiliations.map((item, idx) => (
                 <div
                   key={idx}
@@ -90,8 +90,8 @@ export const Biography = (): JSX.Element => {
 
           {/* Filmography */}
           <div>
-            <h2 className="text-[#7B1E2C] text-4xl font-semibold mb-12">Top Blockbuster Films</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <h2 className="text-[#7B1E2C] text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 sm:mb-8 md:mb-12">Top Blockbuster Films</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
               {filmography.map((film, idx) => (
                 <div
                   key={idx}

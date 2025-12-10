@@ -71,11 +71,11 @@ export const Portfolio = (): JSX.Element => {
 
       <Header activePage="Portfolio" />
 
-      <section className="bg-white py-20">
-        <div className="container mx-auto px-6 md:px-20 flex flex-col md:flex-row items-center gap-12">
+      <section className="bg-white py-10 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12">
           <div className="flex-1">
-            <h1 className="text-5xl font-extrabold text-[#7B1E2C] mb-4">Buddhi Tamang Portfolio</h1>
-            <p className="text-lg text-gray-700 mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#7B1E2C] mb-3 sm:mb-4">Buddhi Tamang Portfolio</h1>
+            <p className="text-base sm:text-lg text-gray-700 mb-3 sm:mb-4">
               Discover the complete works of Buddhi Tamang — iconic Nepali actor, comedian, and theatre practitioner known for his unforgettable performances in film and theatre.
             </p>
           </div>
@@ -85,14 +85,14 @@ export const Portfolio = (): JSX.Element => {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container mx-auto px-6 md:px-20">
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+      <section className="py-10 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-12">
             {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 rounded-full font-semibold transition ${
+                className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full text-sm sm:text-base font-semibold transition ${
                   activeCategory === cat ? "bg-[#7B1E2C] text-white shadow-lg" : "bg-white text-gray-800 border border-gray-300 hover:bg-[#fde2e4]"
                 }`}
               >
@@ -101,13 +101,13 @@ export const Portfolio = (): JSX.Element => {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {filteredItems.map((item, idx) => (
               <article key={idx} className="bg-white rounded-lg overflow-hidden shadow hover:shadow-2xl transition-shadow duration-300">
                 <div className="aspect-w-3 aspect-h-4 overflow-hidden">
                   <img src={item.image} alt={`${item.title} — ${item.role}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
-                <div className="p-6">
+                <div className="p-4 sm:p-5 md:p-6">
                   <span className="bg-[#fde2e4] text-[#7B1E2C] px-2 py-1 rounded-full text-xs font-medium">{item.category}</span>
                   <h3 className="text-2xl font-semibold text-[#7B1E2C] mt-2">{item.title}</h3>
                   <p className="text-gray-700 font-medium mt-1">{item.role}</p>

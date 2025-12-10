@@ -24,22 +24,22 @@ export const Home = (): JSX.Element => {
           <div className="hidden md:block absolute -right-40 top-6 w-[560px] h-[560px] bg-gradient-to-tr from-[#fff1f2] to-[#fffaf0] rounded-full opacity-40 transform rotate-12 filter blur-3xl" />
         </div>
 
-        <div className="container mx-auto px-6 md:px-12 lg:px-24 py-12 md:py-20 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24 py-8 sm:py-12 md:py-20 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 items-center">
             <div className="max-w-xl">
-              <h1 className="[font-family:'Playfair_Display',Helvetica] font-extrabold text-primary text-4xl md:text-6xl leading-tight mb-4">
+              <h1 className="[font-family:'Playfair_Display',Helvetica] font-extrabold text-primary text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-3 sm:mb-4">
                 Buddhi Tamang
               </h1>
 
-              <p className="text-accent/90 font-semibold text-lg md:text-2xl mb-6">
+              <p className="text-accent/90 font-semibold text-base sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6">
                 Versatile Nepali Actor & Storyteller — bringing characters to life on stage and screen.
               </p>
 
-              <p className="text-black text-base md:text-lg leading-relaxed mb-4">
-                I’m Buddhi Tamang, a Nepali actor and theatre practitioner born in Kavrepalanchok in 1982. My artistic journey began in Kathmandu’s vibrant theatre movement, where I discovered my passion for authentic storytelling and performance.
+              <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-3 sm:mb-4">
+                I'm Buddhi Tamang, a Nepali actor and theatre practitioner born in Kavrepalanchok in 1982. My artistic journey began in Kathmandu's vibrant theatre movement, where I discovered my passion for authentic storytelling and performance.
               </p>
 
-              <p className="text-black text-base md:text-lg leading-relaxed mb-6">
+              <p className="text-black text-sm sm:text-base md:text-lg leading-relaxed mb-4 sm:mb-6">
                 Over the years, I’ve worked across traditional theatre, mainstream Nepali cinema, comedic television, and community-based workshops. My focus is on delivering honest, emotionally grounded performances that connect deeply with audiences.
               </p>
 
@@ -69,28 +69,28 @@ export const Home = (): JSX.Element => {
               </div>
 
               {/* Stat Cards */}
-              <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="mt-4 sm:mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {/* Card 1 */}
-                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[300px] flex flex-col">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#7B1E2C] to-[#5a1620] text-white flex items-center justify-center shadow-inner mb-4">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[240px] sm:min-h-[280px] lg:min-h-[300px] flex flex-col">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-[#7B1E2C] to-[#5a1620] text-white flex items-center justify-center shadow-inner mb-3 sm:mb-4">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="sm:w-6 sm:h-6">
                       <path d="M12 2v20M5 7h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                       <circle cx="8" cy="17" r="1.6" fill="currentColor" />
                       <circle cx="16" cy="17" r="1.6" fill="currentColor" />
                     </svg>
                   </div>
 
-                  <p className="text-sm text-gray-500">Years</p>
-                  <p className="text-3xl font-bold text-[#171a1f]">15+</p>
+                  <p className="text-xs sm:text-sm text-gray-500">Years</p>
+                  <p className="text-2xl sm:text-3xl font-bold text-[#171a1f]">15+</p>
 
-                  <p className="text-sm text-gray-600 mt-3 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-gray-600 mt-2 sm:mt-3 leading-relaxed">
                     Extensive experience in theatre, film, and television comedy.
                   </p>
                 </div>
 
                 {/* Card 2 */}
-                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[300px] flex flex-col">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#cc5500] to-[#b24600] text-white flex items-center justify-center shadow-inner mb-4">
+                <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[240px] sm:min-h-[280px] lg:min-h-[300px] flex flex-col">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-[#cc5500] to-[#b24600] text-white flex items-center justify-center shadow-inner mb-3 sm:mb-4">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
                       <rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.6" />
                       <path d="M7 11h.01M12 11h.01M17 11h.01" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
@@ -106,8 +106,8 @@ export const Home = (): JSX.Element => {
                 </div>
 
                 {/* Card 3 */}
-                <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[300px] flex flex-col">
-                  <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#f59e0b] to-[#d17d05] text-white flex items-center justify-center shadow-inner mb-4">
+                <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 min-h-[240px] sm:min-h-[280px] lg:min-h-[300px] flex flex-col">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-gradient-to-br from-[#f59e0b] to-[#d17d05] text-white flex items-center justify-center shadow-inner mb-3 sm:mb-4">
                     <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
                       <path d="M12 3v9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                       <path d="M5 21h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
@@ -125,14 +125,14 @@ export const Home = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="w-full flex justify-center md:justify-end">
-              <div className="w-[340px] md:w-[460px] lg:w-[520px]">
+            <div className="w-full flex justify-center md:justify-end mt-6 md:mt-0">
+              <div className="w-full max-w-[340px] sm:max-w-[400px] md:w-[460px] lg:w-[520px]">
                 <HeroImage
                   src="/images/pkdai2.jpg"
                   alt="Portrait of Buddhi Tamang"
                   caption="Buddhi Tamang"
                   rotate={4}
-                  className="rounded-lg shadow-2xl"
+                  className="rounded-lg shadow-2xl w-full"
                 />
               </div>
             </div>
@@ -141,10 +141,10 @@ export const Home = (): JSX.Element => {
       </section>
 
       {/* Featured Work */}
-      <section className="w-full py-20 bg-white">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <div className="text-center mb-12">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-3xl md:text-4xl mb-3">
+      <section className="w-full py-12 sm:py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3">
               Selected Work
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -211,10 +211,10 @@ export const Home = (): JSX.Element => {
       </section>
 
       {/* Infographic Section */}
-      <section className="w-full py-14 bg-white">
-        <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <div className="text-center mb-8">
-            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-3xl md:text-4xl mb-2">
+      <section className="w-full py-10 sm:py-12 md:py-14 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-2xl sm:text-3xl md:text-4xl mb-2">
               Buddhi Tamang — Actor, Theatre Practitioner & Mentor
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">

@@ -35,8 +35,8 @@ const formFields = [
 export const ContactInfoSection = (): JSX.Element => {
   return (
     <Card className="w-full bg-white rounded-[10px] border border-solid border-[#dee1e6] shadow-[0px_0px_1px_#171a1f0d,0px_0px_2px_#171a1f14]">
-      <CardContent className="flex flex-col p-[33px]">
-        <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-3xl tracking-[0] leading-9 whitespace-nowrap mb-[42px]">
+      <CardContent className="flex flex-col p-4 sm:p-6 md:p-8">
+        <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-xl sm:text-2xl md:text-3xl tracking-[0] leading-7 sm:leading-8 md:leading-9 mb-6 sm:mb-8 md:mb-10">
           Send a Booking Inquiry
         </h2>
 

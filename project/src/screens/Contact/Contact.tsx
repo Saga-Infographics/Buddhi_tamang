@@ -38,10 +38,10 @@ export const Contact = (): JSX.Element => {
       />
       <Header activePage="Contact" />
 
-      <section className="w-full py-16 md:py-28">
-        <div className="container mx-auto px-6 md:px-40">
-          <div className="text-center mb-12">
-            <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-5xl md:text-6xl tracking-[0] leading-[70px] mb-4">
+      <section className="w-full py-10 sm:py-16 md:py-20 lg:py-28">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-40">
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0] leading-tight sm:leading-[50px] md:leading-[60px] lg:leading-[70px] mb-3 sm:mb-4">
               Connect with Buddhi Tamang
             </h1>
             <p className="[font-family:'Open_Sans',Helvetica] text-lg md:text-xl text-[#171a1fcc] max-w-3xl mx-auto leading-8">
@@ -49,16 +49,16 @@ export const Contact = (): JSX.Element => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-start">
             {/* Left: Booking Form / Contact Info */}
-            <div className="bg-white shadow-lg rounded-xl p-8 hover:shadow-2xl transition-shadow duration-300">
+            <div className="bg-white shadow-lg rounded-xl p-4 sm:p-6 md:p-8 hover:shadow-2xl transition-shadow duration-300">
               <ContactInfoSection />
             </div>
 
             {/* Right: Contact Details */}
-            <aside className="bg-[#fff5f2] p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col gap-8">
+            <aside className="bg-[#fff5f2] p-4 sm:p-6 md:p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col gap-6 sm:gap-8">
               <div>
-                <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-3xl mb-6">
+                <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-2xl sm:text-3xl mb-4 sm:mb-6">
                   Direct Contact
                 </h2>
                 <div className="flex flex-col gap-5">
