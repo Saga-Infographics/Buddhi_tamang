@@ -64,7 +64,7 @@ export const Biography = (): JSX.Element => {
       />
       <Header activePage="Biography" />
 
-      <section className="w-full py-12 md:py-24 bg-white">
+      <section className="w-full py-12 md:py-24 bg-gradient-to-b from-[#fff5f2] to-white">
         <div className="container mx-auto px-6 md:px-40">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start mb-24">
             <div className="aspect-[3/4] rounded-lg overflow-hidden">

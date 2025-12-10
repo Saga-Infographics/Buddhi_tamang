@@ -252,7 +252,7 @@ export const Media = (): JSX.Element => {
     : photos.filter(photo => photo.category === selectedCategory);
 
   return (
-    <div className="bg-white w-full relative">
+    <div className="bg-gradient-to-b from-[#fff5f2] to-white w-full relative">
       <SEO
         title="Media Gallery — Buddhi Tamang"
         description="Explore photos, videos, and press coverage of Buddhi Tamang's work across film, television, and theatre. From iconic film moments to behind-the-scenes theatre productions."

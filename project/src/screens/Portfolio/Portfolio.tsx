@@ -60,7 +60,7 @@ export const Portfolio = (): JSX.Element => {
   };
 
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="bg-gradient-to-b from-[#fff5f2] to-white text-gray-900">
       <SEO
         title="Buddhi Tamang — Nepali Actor, Comedian & Theatre Practitioner"
         description="Explore Buddhi Tamang's complete portfolio of films, theatre performances, and directorial works. Discover iconic roles and contributions to Nepali cinema."

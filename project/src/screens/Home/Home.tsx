@@ -8,7 +8,7 @@ import { SEO } from "../../components/SEO/SEO";
 
 export const Home = (): JSX.Element => {
   return (
-    <div className="bg-white w-full relative">
+    <div className="bg-gradient-to-b from-[#fff5f2] to-white w-full relative">
       <SEO
         title="Buddhi Tamang — Nepali Actor, Comedian & Theatre Practitioner"
         description="Discover the journey of Buddhi Tamang, a versatile Nepali actor and theatre practitioner known for his impactful characters, comedic style, and cultural storytelling in film, theatre, and television."
