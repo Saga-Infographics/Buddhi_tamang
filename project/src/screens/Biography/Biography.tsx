@@ -63,10 +63,10 @@ export const Biography = (): JSX.Element => {
               <p className="text-[#171a1fcc] text-base sm:text-lg md:text-xl mb-3 sm:mb-4 leading-relaxed">
                 Buddhi Tamang is a celebrated Nepali actor, theatre practitioner, and mentor. Born in 1982 in Kavrepalanchok, Nepal, he has become a household name through his signature comedic roles and versatile performances across theatre and film.
               </p>
-              <p className="text-[#171a1fcc] text-lg md:text-xl mb-4 leading-relaxed">
+              <p className="text-[#171a1fcc] text-base sm:text-lg md:text-xl mb-3 sm:mb-4 leading-relaxed">
                 He is widely recognized for his iconic characters in the <strong>Kabaddi</strong> and <strong>Chhakka Panja</strong> film series, and for his impactful contributions to Nepali theatre as a performer and mentor.
               </p>
-              <p className="text-[#171a1fcc] text-lg md:text-xl leading-relaxed">
+              <p className="text-[#171a1fcc] text-base sm:text-lg md:text-xl leading-relaxed">
                 With a career spanning over a decade, Buddhi Tamang continues to entertain and inspire audiences, combining traditional Nepali storytelling with contemporary acting techniques.
               </p>
             </div>
@@ -79,7 +79,7 @@ export const Biography = (): JSX.Element => {
               {affiliations.map((item, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-xl p-8 shadow-md hover:shadow-xl transition-shadow duration-300"
+                  className="bg-white rounded-xl p-4 sm:p-6 md:p-8 shadow-md hover:shadow-xl transition-shadow duration-300"
                 >
                   <h3 className="font-semibold text-2xl mb-3">{item.organisation}</h3>
                   <p className="text-gray-700">{item.role}</p>
@@ -95,11 +95,11 @@ export const Biography = (): JSX.Element => {
               {filmography.map((film, idx) => (
                 <div
                   key={idx}
-                  className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-[#7B1E2C] hover:scale-105 transform transition-transform duration-300"
+                  className="bg-white rounded-xl p-4 sm:p-5 md:p-6 shadow-lg hover:shadow-2xl transition-shadow duration-300 border-l-4 border-[#7B1E2C] hover:scale-105 transform transition-transform duration-300"
                 >
-                  <h3 className="text-xl font-bold text-[#7B1E2C] mb-1">{film.title} ({film.year})</h3>
-                  <p className="text-sm text-gray-500 mb-2"><strong>Role:</strong> {film.role}</p>
-                  <p className="text-gray-700">{film.description}</p>
+                  <h3 className="text-lg sm:text-xl font-bold text-[#7B1E2C] mb-1">{film.title} ({film.year})</h3>
+                  <p className="text-xs sm:text-sm text-gray-500 mb-1"><strong>Role:</strong> {film.role}</p>
+                  <p className="text-xs sm:text-sm text-gray-600">{film.description}</p>
                 </div>
               ))}
             </div>

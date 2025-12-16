@@ -40,12 +40,12 @@ export const ContactInfoSection = (): JSX.Element => {
           Send a Booking Inquiry
         </h2>
 
-        <form action="https://formspree.io/f/xvgvqljy" method="POST" className="flex flex-col gap-[18px]">
+        <form action="https://formspree.io/f/xvgvqljy" method="POST" className="flex flex-col gap-3 sm:gap-4">
           {formFields.map((field) => (
-            <div key={field.id} className="flex flex-col gap-[9px]">
+            <div key={field.id} className="flex flex-col gap-1.5 sm:gap-2">
               <Label
                 htmlFor={field.id}
-                className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1f] text-xs tracking-[0] leading-5"
+                className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1f] text-xs sm:text-sm tracking-[0] leading-5"
               >
                 {field.label}
               </Label>
@@ -54,7 +54,7 @@ export const ContactInfoSection = (): JSX.Element => {
                   id={field.id}
                   name={field.id}
                   placeholder={field.placeholder}
-                  className="bg-white rounded-md border border-solid border-[#dee1e6] [font-family:'Open_Sans',Helvetica] font-normal text-[#565d6d] text-sm tracking-[0] leading-[22px] h-[39px] px-3"
+                  className="bg-white rounded-md border border-solid border-[#dee1e6] [font-family:'Open_Sans',Helvetica] font-normal text-[#565d6d] text-xs sm:text-sm tracking-[0] leading-[22px] h-9 sm:h-10 px-3"
                 />
               ) : (
                 <div className="relative">
@@ -62,10 +62,10 @@ export const ContactInfoSection = (): JSX.Element => {
                     id={field.id}
                     name={field.id}
                     placeholder={field.placeholder}
-                    className="bg-white rounded-md border border-solid border-[#dee1e6] [font-family:'Open_Sans',Helvetica] font-normal text-[#565d6d] text-sm tracking-[0] leading-[22px] h-[131px] px-3 pt-2 resize-none"
+                    className="bg-white rounded-md border border-solid border-[#dee1e6] [font-family:'Open_Sans',Helvetica] font-normal text-[#565d6d] text-xs sm:text-sm tracking-[0] leading-[22px] h-24 sm:h-32 px-3 pt-2 resize-none"
                   />
                   <img
-                    className="absolute right-1 bottom-1 w-3 h-3"
+                    className="absolute right-1 bottom-1 w-2.5 sm:w-3 h-2.5 sm:h-3"
                     alt="Resizing handle"
                     src="/resizing-handle.svg"
                   />
@@ -76,7 +76,7 @@ export const ContactInfoSection = (): JSX.Element => {
 
           <Button
             type="submit"
-            className="w-full bg-[#18386e] hover:bg-[#18386e]/90 border-0 h-10 rounded-md [font-family:'Open_Sans',Helvetica] font-semibold text-white text-sm text-center tracking-[0] leading-[22px] mt-[6px]"
+            className="w-full bg-[#18386e] hover:bg-[#18386e]/90 border-0 h-9 sm:h-10 rounded-md [font-family:'Open_Sans',Helvetica] font-semibold text-white text-xs sm:text-sm text-center tracking-[0] leading-[22px] mt-2 sm:mt-3"
           >
             Send Inquiry
           </Button>

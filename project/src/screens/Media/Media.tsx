@@ -264,10 +264,10 @@ export const Media = (): JSX.Element => {
       {/* Hero Section */}
       <section className="relative w-full py-10 sm:py-12 md:py-16 bg-gradient-to-br from-[#7B1E2C]/5 to-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
-          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-3xl sm:text-4xl md:text-5xl tracking-[0] leading-tight mb-3 sm:mb-4">
+          <h1 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-[0] leading-tight mb-2 sm:mb-3 md:mb-4">
             Media Gallery
           </h1>
-          <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-lg md:text-xl tracking-[0] leading-7 max-w-3xl">
+          <p className="[font-family:'Open_Sans',Helvetica] font-normal text-[#171a1fcc] text-sm sm:text-base md:text-lg lg:text-xl tracking-[0] leading-relaxed max-w-3xl">
             A visual journey through Buddhi Tamang's career — from iconic film moments to powerful theatre productions, behind-the-scenes glimpses, and press features.
           </p>
         </div>
@@ -314,11 +314,11 @@ export const Media = (): JSX.Element => {
                     <span className="text-xs text-[#171a1fcc]">{video.year}</span>
                   </div>
 
-                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-lg mb-2 group-hover:text-[#7B1E2C] transition-colors">
+                  <h3 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#171a1f] text-base sm:text-lg mb-2 group-hover:text-[#7B1E2C] transition-colors">
                     {video.title}
                   </h3>
 
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     {video.description}
                   </p>
                 </div>
@@ -335,7 +335,7 @@ export const Media = (): JSX.Element => {
             <h2 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#7B1E2C] text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">
               Iconic Film Performances
             </h2>
-            <p className="text-[#171a1fcc] text-lg max-w-3xl mx-auto">
+            <p className="text-[#171a1fcc] text-xs sm:text-sm md:text-base max-w-3xl mx-auto">
               Celebrating the blockbuster franchises that made Buddhi Tamang a household name across Nepal
             </p>
           </div>
@@ -366,7 +366,7 @@ export const Media = (): JSX.Element => {
                         <span className="text-sm text-slate-600 italic">Role: {film.role}</span>
                       </div>
                       
-                      <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#171a1f] text-xl md:text-2xl mb-3 group-hover:text-[#7B1E2C] transition-colors">
+                      <h3 className="[font-family:'Playfair_Display',Helvetica] font-bold text-[#171a1f] text-lg sm:text-xl md:text-2xl mb-3 group-hover:text-[#7B1E2C] transition-colors">
                         {film.title}
                       </h3>
                       
@@ -394,7 +394,7 @@ export const Media = (): JSX.Element => {
       {/* Press & Interviews Section */}
       <section className="relative w-full py-16 bg-white">
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
-          <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-3xl md:text-4xl mb-8">
+          <h2 className="[font-family:'Playfair_Display',Helvetica] font-semibold text-[#7B1E2C] text-2xl sm:text-3xl md:text-4xl mb-6 sm:mb-8">
             Press & Interviews
           </h2>
 

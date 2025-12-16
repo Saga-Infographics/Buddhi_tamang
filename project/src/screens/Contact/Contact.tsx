@@ -63,17 +63,17 @@ export const Contact = (): JSX.Element => {
                 </h2>
                 <div className="flex flex-col gap-5">
                   <div className="flex items-center gap-4">
-                    <img className="w-7 h-7" src="/mail.svg" alt="Email" />
+                    <img className="w-6 sm:w-7 h-6 sm:h-7" src="/mail.svg" alt="Email" />
                     <div>
-                      <div className="text-sm text-[#171a1f] font-semibold">Email</div>
-                      <div className="text-lg text-[#7B1E2C] font-bold">booking@buddhitamang.com</div>
+                      <div className="text-xs sm:text-sm text-[#171a1f] font-semibold">Email</div>
+                      <div className="text-sm sm:text-base md:text-lg text-[#7B1E2C] font-bold">booking@buddhitamang.com</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
-                    <img className="w-7 h-7" src="/phone.svg" alt="Phone" />
+                    <img className="w-6 sm:w-7 h-6 sm:h-7" src="/phone.svg" alt="Phone" />
                     <div>
-                      <div className="text-sm text-[#171a1f] font-semibold">Phone</div>
-                      <div className="text-lg text-[#7B1E2C] font-bold">+977 986-0765125</div>
+                      <div className="text-xs sm:text-sm text-[#171a1f] font-semibold">Phone</div>
+                      <div className="text-sm sm:text-base md:text-lg text-[#7B1E2C] font-bold">+977 986-0765125</div>
                     </div>
                   </div>
                 </div>

@@ -74,13 +74,13 @@ export const Portfolio = (): JSX.Element => {
       <section className="bg-white py-10 sm:py-16 md:py-20">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12">
           <div className="flex-1">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#7B1E2C] mb-3 sm:mb-4">Buddhi Tamang Portfolio</h1>
-            <p className="text-base sm:text-lg text-gray-700 mb-3 sm:mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#7B1E2C] mb-2 sm:mb-3 md:mb-4">Buddhi Tamang Portfolio</h1>
+            <p className="text-sm sm:text-base md:text-lg text-gray-700 mb-2 sm:mb-3 md:mb-4">
               Discover the complete works of Buddhi Tamang — iconic Nepali actor, comedian, and theatre practitioner known for his unforgettable performances in film and theatre.
             </p>
           </div>
           <div className="flex-1 flex justify-center">
-            <img src="/images/buddhi-tamang-hero.jpg" alt="Buddhi Tamang" className="rounded-xl shadow-lg w-full max-w-sm object-cover" />
+            <img src="/images/buddhi-tamang-hero.jpg" alt="Buddhi Tamang" className="rounded-xl shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md object-cover" />
           </div>
         </div>
       </section>
@@ -92,7 +92,7 @@ export const Portfolio = (): JSX.Element => {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 rounded-full text-sm sm:text-base font-semibold transition ${
+                className={`px-2 sm:px-3 md:px-4 lg:px-5 py-1 sm:py-1.5 md:py-2 rounded-full text-xs sm:text-sm md:text-base font-semibold transition ${
                   activeCategory === cat ? "bg-[#7B1E2C] text-white shadow-lg" : "bg-white text-gray-800 border border-gray-300 hover:bg-[#fde2e4]"
                 }`}
               >
@@ -109,9 +109,9 @@ export const Portfolio = (): JSX.Element => {
                 </div>
                 <div className="p-4 sm:p-5 md:p-6">
                   <span className="bg-[#fde2e4] text-[#7B1E2C] px-2 py-1 rounded-full text-xs font-medium">{item.category}</span>
-                  <h3 className="text-2xl font-semibold text-[#7B1E2C] mt-2">{item.title}</h3>
-                  <p className="text-gray-700 font-medium mt-1">{item.role}</p>
-                  <p className="text-gray-600 text-sm mt-2">{item.description}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-[#7B1E2C] mt-2">{item.title}</h3>
+                  <p className="text-xs sm:text-sm text-gray-700 font-medium mt-1">{item.role}</p>
+                  <p className="text-xs sm:text-sm text-gray-600 mt-2">{item.description}</p>
                   <span className="text-gray-400 text-xs mt-1 block">{item.year}</span>
                 </div>
               </article>
