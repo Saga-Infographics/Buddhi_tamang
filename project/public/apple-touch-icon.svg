@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="gemGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B1E2C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5a1620;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="192" height="192" rx="44" fill="url(#gemGradient)"/>
+  
+  <!-- Gem/Diamond shape in center -->
+  <g transform="translate(96, 96)">
+    <!-- Outer gem -->
+    <path d="M 0 -40 L 28 -18 L 35 18 L 0 40 L -35 18 L -28 -18 Z" 
+          fill="none" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+    
+    <!-- Inner facets -->
+    <path d="M 0 -40 L 28 -18 M 0 -40 L -28 -18" 
+          stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 28 -18 L 35 18 M -28 -18 L -35 18" 
+          stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+    
+    <!-- Center highlight -->
+    <circle cx="0" cy="-10" r="8" fill="white" opacity="0.95"/>
+  </g>
+</svg>
