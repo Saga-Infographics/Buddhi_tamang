@@ -50,7 +50,7 @@ export const Biography = (): JSX.Element => {
             {/* Portrait */}
             <div className="aspect-[3/4] rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
               <img
-                src="/images/buddhi-tamang-portrait.jpg"
+                src="/images/buddhi.png"
                 alt="Buddhi Tamang, Nepali actor and theatre practitioner"
                 className="w-full h-full object-cover"
                 loading="lazy"
