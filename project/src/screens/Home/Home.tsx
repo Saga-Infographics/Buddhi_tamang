@@ -161,32 +161,32 @@ export const Home = (): JSX.Element => {
                 tag: "Film Series",
                 description:
                   "Featuring Buddhi Tamang as the much-loved Chhantyal character, known for the viral 'Hait' expression...",
-                image: "/images/kabaddi.jpg"
+                image: "https://upload.wikimedia.org/wikipedia/en/8/82/Kabaddi_4_poster.jpg"
               },
               {
                 title: "Chhakka Panja Franchise",
                 tag: "Film Series",
                 description:
                   "One of Nepal's most successful comedy franchises, where Buddhi Tamang’s performances shine...",
-                image: "/images/chhakka-panja.jpg"
+                image: "https://m.media-amazon.com/images/M/MV5BYTJiNzgyYzAtYzMzZi00NWRlLWEyZjMtOTM5NmFiODA2MzM4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
               },
               {
                 title: "Milarepa",
                 tag: "Theatre",
                 description:
                   "A powerful theatrical production co-produced and co-directed by Buddhi Tamang...",
-                image: "/images/milarepa.jpg"
+                image: "https://www.mandalatheatre.com/wp-content/uploads/2025/10/WhatsApp-Image-2025-10-31-at-15.59.45_fd31cef1-724x1024.avif"
               },
             ].map((item, idx) => (
               <article
                 key={idx}
                 className="group bg-card rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow"
               >
-                <div className="aspect-[4/3] bg-slate-200 overflow-hidden">
+                <div className="aspect-[3/4] bg-slate-200 overflow-hidden flex items-center justify-center">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                     decoding="async"
                   />

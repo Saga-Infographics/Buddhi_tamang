@@ -7,28 +7,20 @@ import { SEO } from "../../components/SEO/SEO";
 // Featured showreel and performance clips
 const featuredVideos = [
   {
-    title: "Buddhi Tamang – Acting Showreel",
-    type: "Showreel",
-    year: "2024",
-    description: "A compilation of Buddhi Tamang's most memorable performances across film and theatre, showcasing his versatility and range as an actor.",
-    thumbnail: "/images/showreel-thumb.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=example",
-  },
-  {
-    title: "Kabaddi Series – Behind the Scenes",
-    type: "Behind the Scenes",
-    year: "2015-2023",
-    description: "Go behind the scenes of the iconic Kabaddi franchise that made Buddhi Tamang a household name with his unforgettable 'Hait' dialogue.",
-    thumbnail: "/images/kabaddi-bts.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=example",
-  },
-  {
-    title: "Milarepa – Theatre Rehearsal",
-    type: "Theatre Rehearsal",
+    title: "बुद्धीले ह्याण्डसम के हो भन्दै पत्रकारको इन्टरभ्यु लिए, Buddhi Tamang Interview | Mero Online TV",
+    type: "Show",
     year: "2025",
-    description: "Exclusive look at the creative process behind Milarepa, Mandala Theatre's production co-directed by Buddhi Tamang.",
-    thumbnail: "/images/milarepa-rehearsal.jpg",
-    videoUrl: "https://www.youtube.com/watch?v=example",
+    description: "Buddhi Tamang Interview on Mero Online TV| Camera : Anim Nepali",
+    thumbnail: "https://img.youtube.com/vi/KraeWisAud0/hqdefault.jpg",
+    videoUrl: "https://youtu.be/KraeWisAud0?si=1F1pz0-57Ev0wtrv",
+  },
+  {
+    title: "Live Interview with Buddhi Tamang (Actor) | Nepali Podcast | deepesh shrestha",
+    type: "Interview",
+    year: "2024",
+    description: "Podcast interview covering Buddhi Tamang's theatre roots, Kabaddi breakthrough, and signature ‘Hait’ catchphrase.",
+    thumbnail: "https://img.youtube.com/vi/bEOieghrtWk/hqdefault.jpg",
+    videoUrl: "https://www.youtube.com/live/bEOieghrtWk?si=RQzh70fVc4gGdyCF",
   },
 ];
 
@@ -186,41 +178,49 @@ const featuredFilms = [
     title: "Kabaddi (2014)",
     role: "Chhantyal",
     description: "Buddhi Tamang gained nationwide recognition with Kabaddi (2014), a film that kickstarted the beloved Kabaddi franchise in Nepali cinema. His comedic timing and unforgettable portrayal of Chhantyal made the movie a cultural phenomenon, earning massive attention from audiences and critics alike.",
-    image: "/images/kabaddi.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/en/9/9d/Nepali_Movie_Kabaddi_official_poster.jpg",
     year: "2014",
   },
   {
     title: "Chhakka Panja (2016)",
     role: "Budhhi",
     description: "Chhakka Panja (2016) became one of Nepal's biggest comedy blockbusters, and Buddhi Tamang's performance as Budhhi stood out as a fan favorite. Known for his signature humor and expressive acting, he helped make the film a massive box office success.",
-    image: "/images/chhakka-panja.jpg",
+    image: "https://m.media-amazon.com/images/M/MV5BYTY3N2ZhMTQtODE0OC00YTlkLWFiMzMtYjI1OTY2ZjdlZGQwXkEyXkFqcGc@._V1_.jpg",
     year: "2016",
   },
   {
     title: "Chhakka Panja 3 (2018)",
     role: "Budhhi",
     description: "In Chhakka Panja 3 (2018), Buddhi Tamang reprised his iconic role of Budhhi, bringing laughter and memorable moments to audiences. The film solidified his reputation as one of Nepal's most beloved comedic actors.",
-    image: "/images/chhakka-panja3.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/en/4/4e/Chhakka_panja_three_ver2.jpg",
     year: "2018",
   },
   {
     title: "Chhakka Panja 4 (2023)",
     role: "Budhhi",
     description: "Continuing the franchise's legacy, Chhakka Panja 4 (2023) features Buddhi Tamang in his signature role of Budhhi. This blockbuster hit captivated audiences nationwide, reaffirming his status as a top-tier comedic actor in Nepali cinema.",
-    image: "/images/chhakka-panja4.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Chhakka_Panja_4.jpg/250px-Chhakka_Panja_4.jpg",
     year: "2023",
   },
   {
     title: "Kabaddi 4: The Final Match (2023)",
     role: "Chhantyal",
     description: "The grand finale of the Kabaddi series, Kabaddi 4: The Final Match (2023), showcases Buddhi Tamang reprising his beloved role as Chhantyal. The film achieved huge box office success, highlighting his enduring popularity and impact on the Nepali film industry.",
-    image: "/images/kabaddi4.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/en/8/82/Kabaddi_4_poster.jpg",
     year: "2023",
   },
 ];
 
 // Press and interview clips
 const pressMedia = [
+  {
+    title: "न 'मासिन्या' बुद्धि तामाङ | Interview with Buddhi Tamang aka 'HAIT'",
+    type: "Interview",
+    outlet: "YouTube",
+    description: "Full video interview where Buddhi Tamang discusses his work and the Masinya production.",
+    date: "2024",
+    url: "https://youtu.be/ujfmCWqFmoY?si=r5hqFPwXcV6CeMsr",
+  },
   {
     title: "Interview: Journey from Theatre to Film",
     type: "Interview",
@@ -422,6 +422,16 @@ export const Media = (): JSX.Element => {
                 <p className="text-xs text-slate-500 italic">
                   Published by {item.outlet}
                 </p>
+                {item.url && (
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block text-sm font-semibold text-[#7B1E2C] hover:underline"
+                  >
+                    Watch interview
+                  </a>
+                )}
               </div>
             ))}
           </div>
