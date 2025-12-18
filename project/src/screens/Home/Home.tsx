@@ -77,7 +77,7 @@ export const Home = (): JSX.Element => {
             <div className="w-full flex justify-center md:justify-end mt-6 md:mt-0 overflow-hidden">
               <div className="w-full max-w-[340px] sm:max-w-[400px] md:w-[460px] lg:w-[520px] overflow-hidden rounded-lg shadow-2xl">
                 <HeroImage
-                  src="/images/pkdai2.jpg"
+                  src="/images/buddhi.png"
                   alt="Portrait of Buddhi Tamang"
                   caption="Buddhi Tamang"
                   rotate={4}
