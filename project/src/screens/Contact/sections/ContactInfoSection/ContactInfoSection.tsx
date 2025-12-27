@@ -76,7 +76,7 @@ export const ContactInfoSection = (): JSX.Element => {
 
           <Button
             type="submit"
-            className="w-full bg-[#18386e] hover:bg-[#18386e]/90 border-0 h-9 sm:h-10 rounded-md [font-family:'Open_Sans',Helvetica] font-semibold text-white text-xs sm:text-sm text-center tracking-[0] leading-[22px] mt-2 sm:mt-3"
+            className="w-full bg-[#7B1E2C] hover:bg-[#5a1620] border-0 h-9 sm:h-10 rounded-md [font-family:'Open_Sans',Helvetica] font-semibold text-white text-xs sm:text-sm text-center tracking-[0] leading-[22px] mt-2 sm:mt-3 shadow-md hover:shadow-lg transition-all"
           >
             Send Inquiry
           </Button>

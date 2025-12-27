@@ -73,7 +73,7 @@ export const Contact = (): JSX.Element => {
                     <img className="w-6 sm:w-7 h-6 sm:h-7" src="/phone.svg" alt="Phone" />
                     <div>
                       <div className="text-xs sm:text-sm text-[#171a1f] font-semibold">Phone</div>
-                      <div className="text-sm sm:text-base md:text-lg text-[#7B1E2C] font-bold">+977 986-0765125</div>
+                      <div className="text-sm sm:text-base md:text-lg text-[#7B1E2C] font-bold">+977 984-1185625</div>
                     </div>
                   </div>
                 </div>
@@ -101,7 +101,7 @@ export const Contact = (): JSX.Element => {
                         size="icon"
                         className="w-12 h-12 bg-white border border-[#7B1E2C] rounded-full flex items-center justify-center shadow-md hover:shadow-lg"
                       >
-                        <img src={social.icon} alt={social.alt} className="w-6 h-6" />
+                        <img src={social.icon} alt={social.alt} className="w-6 h-6 relative z-10" />
                       </Button>
                     </a>
                   ))}
@@ -116,7 +116,7 @@ export const Contact = (): JSX.Element => {
                   <img className="w-7 h-7 mt-1" src="/home-2-1.svg" alt="Location" />
                   <div className="text-[#171a1fcc] text-sm">
                     <div className="mb-2">
-                      <span className="font-semibold text-[#171a1f]">Permanent Address:</span> Gaighat, Nepal
+                      <span className="font-semibold text-[#171a1f]">Permanent Address:</span> Kavrepalanchok, Nepal
                     </div>
                     <div>
                       <span className="font-semibold text-[#171a1f]">Current Residence:</span> Kathmandu, Nepal
