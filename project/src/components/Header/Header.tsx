@@ -15,9 +15,9 @@ const navigationItems = [
 ];
 
 const socialMediaIcons = [
-  { alt: "Facebook", src: "/facebook.svg", url: "#" },
-  { alt: "Instagram", src: "/instagram.svg", url: "#" },
-  { alt: "YouTube", src: "/youtube-1.svg", url: "#" },
+  { alt: "Facebook", src: "/facebook.svg", url: "https://www.facebook.com/buddhitamangofficial" },
+  { alt: "Instagram", src: "/instagram.svg", url: "https://www.instagram.com/buddhitamangofficial/" },
+  { alt: "TikTok", src: "/tiktok.svg", url: "https://www.tiktok.com/@buddhitamangofficial" },
 ];
 
 export const Header = ({ activePage }: HeaderProps): JSX.Element => {

@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 
 const socialIcons = [
-  { src: "/container-3.svg", alt: "Facebook", url: "#" },
-  { src: "/container.svg", alt: "Instagram", url: "#" },
+  { src: "/container-3.svg", alt: "Facebook", url: "https://www.facebook.com/buddhitamangofficial" },
+  { src: "/container.svg", alt: "Instagram", url: "https://www.instagram.com/buddhitamangofficial/" },
   // YouTube (placeholder)
   { src: "/container-2.svg", alt: "YouTube", url: "#" },
 ];

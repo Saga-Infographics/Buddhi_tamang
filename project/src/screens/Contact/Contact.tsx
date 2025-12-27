@@ -9,12 +9,12 @@ const socialMediaButtons = [
   {
     icon: "/facebook-1.svg",
     alt: "Facebook",
-    url: "https://www.facebook.com/BuddhiTamangOfficial",
+    url: "https://www.facebook.com/buddhitamangofficial",
   },
   {
     icon: "/instagram.svg",
     alt: "Instagram",
-    url: "https://www.instagram.com/buddhitamang.official/",
+    url: "https://www.instagram.com/buddhitamangofficial/",
   },
   {
     icon: "/youtube.svg",
@@ -24,7 +24,7 @@ const socialMediaButtons = [
   {
     icon: "/tiktok.svg",
     alt: "TikTok",
-    url: "https://www.tiktok.com/@buddhitamang",
+    url: "https://www.tiktok.com/@buddhitamangofficial",
   },
 ];
 
